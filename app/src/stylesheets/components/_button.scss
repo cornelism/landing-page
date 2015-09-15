@@ -1,0 +1,26 @@
+.btn-default {
+	color:white;
+	background-color:#009966;
+	border:0;
+	padding: 10px 12px 10px 12px;
+	margin-bottom:10px;
+	
+	&:hover,
+	&:focus,
+	&:active,
+	&.active,
+	.open &.dropdown-toggle {
+		background-color:#008578;
+		border-color:#008578;
+		color:white;
+	}
+	
+}
+
+.btn.white {
+	background-color: white;
+	border: 0;
+	color: black;
+	text-transform: uppercase;
+	float: left;
+}

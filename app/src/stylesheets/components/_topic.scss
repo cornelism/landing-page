@@ -1,0 +1,43 @@
+.topic {
+	box-sizing: border-box;
+	background-color: #fff;
+	border-top: 1px solid #e5e9ef;
+	border-left: 1px solid #e5e9ef;
+	border-bottom: 1px solid #e5e9ef;
+	min-height: 225px;
+	
+	&:first-child {
+		border: 1px solid #e5e9ef;
+	}
+	
+	img {
+		width: 100%;
+	}
+	
+	h2 {
+		/*padding: 0 1em 0.5em;*/
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	
+	&:last-child {
+		border-right: 1px solid #e5e9ef;
+	}
+	
+	&.active,
+	&:hover {
+		border: 1px solid transparent;
+		background-color: initial;
+		img,
+		h2 {
+			opacity: 1;
+		}
+		
+	}
+	
+	img,
+	h2 {
+		opacity: 0.5;	
+	}
+}

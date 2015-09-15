@@ -1,0 +1,29 @@
+.visual-header {
+	margin-bottom: 3em;
+	color: white;
+	img {
+		
+	}
+	#header-cta {
+		position: absolute;
+		padding: 1em;
+		background-color: $green;
+		bottom: 0;
+		right: 30px;
+		
+		h1 {
+			position: initial;
+			padding: initial;
+			text-transform: uppercase;
+			box-shadow: initial;
+			background-color: initial;
+		}
+		p {
+			
+		}
+		.tel {
+			padding: 12px 12px;
+			display: inline-block;
+		}
+	}
+}
