@@ -26,13 +26,15 @@ body {
 
 /*	.bg-silver{background:#eeeeee;padding:20px;border-radius:3px;margin:10px 0 20px 0}
 	.bg-silver h2{margin-top:0}*/
-/*.content {
-	background-color:white;
-	margin-top:20px;
-	padding:20px;
-	border:1px solid #e5e9ef;
-	
-}*/
+/* line 19, ../../src/stylesheets/main.scss */
+.content {
+  background-color: #fafafa;
+  /*margin-top:20px;*/
+  padding: 1em;
+  border: 1px solid #e5e9ef;
+  border-top: 0;
+}
+
 /* line 27, ../../src/stylesheets/main.scss */
 blockquote {
   font-size: 12pt;
@@ -42,6 +44,7 @@ blockquote {
   padding: 0;
   display: inline-block;
   width: 100%;
+  margin-bottom: 1em;
 }
 
 /* line 1, ../../src/stylesheets/components/_visual-header.scss */
@@ -49,7 +52,7 @@ blockquote {
   margin-bottom: 3em;
   color: white;
 }
-/* line 7, ../../src/stylesheets/components/_visual-header.scss */
+/* line 9, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta {
   position: relative;
   background-color: #00965e;
@@ -57,7 +60,7 @@ blockquote {
   padding: 15px;
 }
 @media (min-width: 768px) {
-  /* line 7, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 9, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta {
     position: absolute;
     bottom: 0;
@@ -68,12 +71,12 @@ blockquote {
   }
 }
 @media (min-width: 992px) {
-  /* line 7, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 9, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta {
     padding: 30px;
   }
 }
-/* line 26, ../../src/stylesheets/components/_visual-header.scss */
+/* line 28, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta h1 {
   position: initial;
   padding: 0 0 1em 0;
@@ -82,37 +85,37 @@ blockquote {
   background-color: initial;
 }
 @media (min-width: 768px) {
-  /* line 26, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 28, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta h1 {
     padding: 0 0 0.5em 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 37, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 39, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
     margin-bottom: 0.5em;
   }
 }
 @media (min-width: 992px) {
-  /* line 37, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 39, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
     margin-bottom: 1em;
   }
 }
-/* line 47, ../../src/stylesheets/components/_visual-header.scss */
+/* line 49, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta .tel {
   padding: 12px 12px;
   display: inline-block;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 47, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 49, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 5px 0 0 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 47, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 49, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 12px 12px;
   }
@@ -151,43 +154,42 @@ blockquote {
 .topic {
   box-sizing: border-box;
   background-color: #fff;
-  border-top: 1px solid #e5e9ef;
-  border-left: 1px solid #e5e9ef;
+  /*	border-top: 1px solid #e5e9ef;
+  	border-left: 1px solid #e5e9ef;*/
   border-bottom: 1px solid #e5e9ef;
   min-height: 180px;
   box-sizing: border-box;
 }
 /* line 10, ../../src/stylesheets/components/_topic.scss */
 .topic:first-child {
-  border: 1px solid #e5e9ef;
+  border-left: 1px solid #e5e9ef;
 }
 /* line 14, ../../src/stylesheets/components/_topic.scss */
+.topic:last-child {
+  border-right: 1px solid #e5e9ef;
+}
+/* line 18, ../../src/stylesheets/components/_topic.scss */
 .topic img {
   width: 100%;
 }
-/* line 18, ../../src/stylesheets/components/_topic.scss */
+/* line 22, ../../src/stylesheets/components/_topic.scss */
 .topic h2 {
-  /*padding: 0 1em 0.5em;*/
   padding: 0;
   margin: 0;
   text-align: center;
 }
-/* line 25, ../../src/stylesheets/components/_topic.scss */
-.topic:last-child {
-  border-right: 1px solid #e5e9ef;
-}
-/* line 29, ../../src/stylesheets/components/_topic.scss */
+/* line 28, ../../src/stylesheets/components/_topic.scss */
 .topic.active, .topic:hover {
-  border: 1px solid transparent;
-  background-color: initial;
+  border-bottom: 1px solid transparent;
+  background-color: #fafafa;
 }
-/* line 33, ../../src/stylesheets/components/_topic.scss */
+/* line 32, ../../src/stylesheets/components/_topic.scss */
 .topic.active img,
 .topic.active h2, .topic:hover img,
 .topic:hover h2 {
   opacity: 1;
 }
-/* line 40, ../../src/stylesheets/components/_topic.scss */
+/* line 39, ../../src/stylesheets/components/_topic.scss */
 .topic img,
 .topic h2 {
   opacity: 0.5;

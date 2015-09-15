@@ -4,7 +4,7 @@ ul.usp-list {
 	padding: 0;
 	list-style-type:none;
 	li {
-		background: url("https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png") no-repeat top left;
+		background: url($bullet) no-repeat top left;
 		padding-left: 20px;
 		margin-bottom: 5px;
 	}

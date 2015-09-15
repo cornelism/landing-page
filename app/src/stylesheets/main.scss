@@ -16,13 +16,13 @@ body {
 /*	.bg-silver{background:#eeeeee;padding:20px;border-radius:3px;margin:10px 0 20px 0}
 	.bg-silver h2{margin-top:0}*/
 
-/*.content {
-	background-color:white;
-	margin-top:20px;
-	padding:20px;
+.content {
+	background-color:#fafafa;
+	/*margin-top:20px;*/
+	padding:1em;
 	border:1px solid #e5e9ef;
-	
-}*/
+	border-top:0;
+}
 
 blockquote {
 	font-size: 12pt;
@@ -32,6 +32,7 @@ blockquote {
 	padding: 0;
 	display: inline-block;
     width: 100%;
+    margin-bottom: 1em;
 }
 
 @import "components/visual-header";
