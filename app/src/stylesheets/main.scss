@@ -13,9 +13,6 @@ body {
 	
 }
 
-/*	.bg-silver{background:#eeeeee;padding:20px;border-radius:3px;margin:10px 0 20px 0}
-	.bg-silver h2{margin-top:0}*/
-
 .content {
 	background-color:#fafafa;
 	/*margin-top:20px;*/
@@ -35,6 +32,8 @@ blockquote {
     margin-bottom: 1em;
 }
 
+@import "components/row";
+@import "components/columns";
 @import "components/visual-header";
 @import "components/button";
 @import "components/topic";

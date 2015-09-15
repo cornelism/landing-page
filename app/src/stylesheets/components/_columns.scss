@@ -1,0 +1,5 @@
+div[class^="col"]{
+	.primaryContent & {
+		display: inline;
+	}
+}	

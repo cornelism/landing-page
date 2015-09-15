@@ -1,6 +1,15 @@
 .visual-header {
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 	color: white;
+	display:inline-block;
+	
+	@include small {
+		margin-bottom: 2em;
+	}
+	
+	@include medium {
+		margin-bottom: 3em;
+	}
 	
 	img {
 		
