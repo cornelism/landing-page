@@ -53,13 +53,24 @@ blockquote {
 }
 /* line 7, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta {
-  position: absolute;
+  position: relative;
   background-color: #00965e;
-  bottom: 0;
-  right: 30px;
-  padding: 30px;
+  top: -5px;
+  width: 100%;
+  padding: 15px;
 }
-/* line 13, ../../src/stylesheets/components/_visual-header.scss */
+@media (min-width: 992px) {
+  /* line 7, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header #header-cta {
+    position: absolute;
+    bottom: 0;
+    top: initial;
+    right: 30px;
+    padding: 30px;
+    width: 50%;
+  }
+}
+/* line 24, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta h1 {
   position: initial;
   padding: 0 0 1em 0;
@@ -67,11 +78,11 @@ blockquote {
   box-shadow: initial;
   background-color: initial;
 }
-/* line 20, ../../src/stylesheets/components/_visual-header.scss */
+/* line 32, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta p#header-txt {
   margin-bottom: 1em;
 }
-/* line 23, ../../src/stylesheets/components/_visual-header.scss */
+/* line 36, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta .tel {
   padding: 12px 12px;
   display: inline-block;

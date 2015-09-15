@@ -8024,15 +8024,3 @@ button.close {
     display: none !important;
   }
 }
-/* line 1, ../../src/stylesheets/abstraction/_helpers.scss */
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* line 6, ../../src/stylesheets/abstraction/_helpers.scss */
-.align-right {
-  width: 100%;
-  display: block;
-  text-align: right;
-}
