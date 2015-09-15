@@ -25,6 +25,11 @@ body {
 }
 
 /* line 16, ../../src/stylesheets/main.scss */
+.primaryContent {
+  max-width: 880px;
+}
+
+/* line 20, ../../src/stylesheets/main.scss */
 .content {
   background-color: #fafafa;
   /*margin-top:20px;*/
@@ -33,7 +38,7 @@ body {
   border-top: 0;
 }
 
-/* line 24, ../../src/stylesheets/main.scss */
+/* line 28, ../../src/stylesheets/main.scss */
 blockquote {
   font-size: 12pt;
   font-weight: bold;
@@ -224,10 +229,12 @@ blockquote {
 ul.usp-list {
   padding: 0;
   list-style-type: none;
+  margin-bottom: 2em;
 }
-/* line 6, ../../src/stylesheets/components/_usp-list.scss */
+/* line 7, ../../src/stylesheets/components/_usp-list.scss */
 ul.usp-list li {
   background: url("https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png") no-repeat top left;
   padding-left: 20px;
   margin-bottom: 5px;
+  font-size: 12pt;
 }

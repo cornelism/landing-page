@@ -3,9 +3,11 @@
 ul.usp-list {
 	padding: 0;
 	list-style-type:none;
+	margin-bottom: 2em;
 	li {
 		background: url($bullet) no-repeat top left;
 		padding-left: 20px;
 		margin-bottom: 5px;
+		font-size:12pt;
 	}
 }
