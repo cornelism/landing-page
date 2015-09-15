@@ -26,14 +26,13 @@ body {
 
 /*	.bg-silver{background:#eeeeee;padding:20px;border-radius:3px;margin:10px 0 20px 0}
 	.bg-silver h2{margin-top:0}*/
-/* line 19, ../../src/stylesheets/main.scss */
-.content {
-  background-color: white;
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #e5e9ef;
-}
-
+/*.content {
+	background-color:white;
+	margin-top:20px;
+	padding:20px;
+	border:1px solid #e5e9ef;
+	
+}*/
 /* line 27, ../../src/stylesheets/main.scss */
 blockquote {
   font-size: 12pt;
@@ -88,24 +87,32 @@ blockquote {
     padding: 0 0 0.5em 0;
   }
 }
-/* line 38, ../../src/stylesheets/components/_visual-header.scss */
-.visual-header #header-cta p#header-txt {
-  margin-bottom: 1em;
+@media (min-width: 768px) {
+  /* line 37, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header #header-cta p#header-txt {
+    margin-bottom: 0.5em;
+  }
 }
-/* line 42, ../../src/stylesheets/components/_visual-header.scss */
+@media (min-width: 992px) {
+  /* line 37, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header #header-cta p#header-txt {
+    margin-bottom: 1em;
+  }
+}
+/* line 47, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta .tel {
   padding: 12px 12px;
   display: inline-block;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 42, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 47, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 5px 0 0 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 42, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 47, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 12px 12px;
   }

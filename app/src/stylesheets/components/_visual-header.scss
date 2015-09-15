@@ -29,14 +29,19 @@
 			text-transform: uppercase;
 			box-shadow: initial;
 			background-color: initial;
-			
 			@include small {
 				padding: 0 0 0.5em 0;
 			}
 		}
 		
 		p#header-txt {
-			margin-bottom: 1em;
+			@include small {
+				margin-bottom: 0.5em;
+			}
+			
+			@include medium {
+				margin-bottom: 1em;
+			}
 		}
 		
 		.tel {
