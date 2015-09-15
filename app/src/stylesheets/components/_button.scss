@@ -14,7 +14,9 @@
 		border-color:#008578;
 		color:white;
 	}
-	
+	.visual-header & {
+		margin: 0;
+	}
 }
 
 .btn.white {
@@ -23,4 +25,5 @@
 	color: black;
 	text-transform: uppercase;
 	float: left;
+	font-weight: bold;
 }

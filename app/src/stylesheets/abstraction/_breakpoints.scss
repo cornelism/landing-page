@@ -1,0 +1,18 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+@mixin mobile {
+	@media (max-width: 767px) { @content; }
+}
+
+@mixin small {
+	@media (min-width: 768px) { @content; }
+}
+
+@mixin medium {
+	@media (min-width: 992px) { @content; }
+}
+
+@mixin large {
+	@media (min-width: 1200px) { @content; }
+}

@@ -6,24 +6,25 @@
 	}
 	#header-cta {
 		position: absolute;
-		padding: 1em;
 		background-color: $green;
 		bottom: 0;
 		right: 30px;
-		
+		padding: 30px;
 		h1 {
 			position: initial;
-			padding: initial;
+			padding: 0 0 1em 0;
 			text-transform: uppercase;
 			box-shadow: initial;
 			background-color: initial;
 		}
-		p {
-			
+		p#header-txt {
+			margin-bottom: 1em;
 		}
 		.tel {
 			padding: 12px 12px;
 			display: inline-block;
+			margin-bottom: 0;
 		}
+		
 	}
 }
