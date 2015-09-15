@@ -5,20 +5,22 @@
 		
 	}
 	#header-cta {
-		
 		position: relative;
 		background-color: $green;
 		top: -5px;
-		width: 100%;
 		padding: 15px;
 		
-		@include medium {
+		@include small {
 			position: absolute;
 			bottom: 0;
 			top: initial;
 			right: 30px;
-			padding: 30px;
+			padding: 10px;
 			width: 50%;
+		}
+		
+		@include medium {
+			padding: 30px;
 		}
 		
 		h1 {
@@ -27,6 +29,10 @@
 			text-transform: uppercase;
 			box-shadow: initial;
 			background-color: initial;
+			
+			@include small {
+				padding: 0 0 0.5em 0;
+			}
 		}
 		
 		p#header-txt {
@@ -37,6 +43,13 @@
 			padding: 12px 12px;
 			display: inline-block;
 			margin-bottom: 0;
+			@include small {
+				padding:5px 0 0 0;
+			}
+			
+			@include medium {
+				padding: 12px 12px;
+			}
 		}
 	}
 }

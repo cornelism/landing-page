@@ -26,8 +26,7 @@ body {
 
 /*	.bg-silver{background:#eeeeee;padding:20px;border-radius:3px;margin:10px 0 20px 0}
 	.bg-silver h2{margin-top:0}*/
-/*	bullet: https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png*/
-/* line 21, ../../src/stylesheets/main.scss */
+/* line 19, ../../src/stylesheets/main.scss */
 .content {
   background-color: white;
   margin-top: 20px;
@@ -35,7 +34,7 @@ body {
   border: 1px solid #e5e9ef;
 }
 
-/* line 29, ../../src/stylesheets/main.scss */
+/* line 27, ../../src/stylesheets/main.scss */
 blockquote {
   font-size: 12pt;
   font-weight: bold;
@@ -56,21 +55,26 @@ blockquote {
   position: relative;
   background-color: #00965e;
   top: -5px;
-  width: 100%;
   padding: 15px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   /* line 7, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta {
     position: absolute;
     bottom: 0;
     top: initial;
     right: 30px;
-    padding: 30px;
+    padding: 10px;
     width: 50%;
   }
 }
-/* line 24, ../../src/stylesheets/components/_visual-header.scss */
+@media (min-width: 992px) {
+  /* line 7, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header #header-cta {
+    padding: 30px;
+  }
+}
+/* line 26, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta h1 {
   position: initial;
   padding: 0 0 1em 0;
@@ -78,15 +82,33 @@ blockquote {
   box-shadow: initial;
   background-color: initial;
 }
-/* line 32, ../../src/stylesheets/components/_visual-header.scss */
+@media (min-width: 768px) {
+  /* line 26, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header #header-cta h1 {
+    padding: 0 0 0.5em 0;
+  }
+}
+/* line 38, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta p#header-txt {
   margin-bottom: 1em;
 }
-/* line 36, ../../src/stylesheets/components/_visual-header.scss */
+/* line 42, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta .tel {
   padding: 12px 12px;
   display: inline-block;
   margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  /* line 42, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header #header-cta .tel {
+    padding: 5px 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 42, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header #header-cta .tel {
+    padding: 12px 12px;
+  }
 }
 
 /* line 1, ../../src/stylesheets/components/_button.scss */
@@ -162,4 +184,17 @@ blockquote {
 .topic img,
 .topic h2 {
   opacity: 0.5;
+}
+
+/*	bullet: https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png*/
+/* line 3, ../../src/stylesheets/components/_usp-list.scss */
+ul.usp-list {
+  padding: 0;
+  list-style-type: none;
+}
+/* line 6, ../../src/stylesheets/components/_usp-list.scss */
+ul.usp-list li {
+  background: url("https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png") no-repeat top left;
+  padding-left: 20px;
+  margin-bottom: 5px;
 }
