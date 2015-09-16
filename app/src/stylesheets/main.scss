@@ -12,6 +12,10 @@ a:focus {
 	color:$green-link;
 }
 
+p:last-of-type {
+	margin-bottom: 0;
+}
+
 body {
 	padding-bottom:8px;
 	
@@ -23,7 +27,7 @@ body {
 		margin-top:20px;
 	}
 	@include medium {
-		margin-top:40px;
+		margin:40px 0;
 	}
 }
 
@@ -32,11 +36,12 @@ body {
 	padding:1em;
 	border:1px solid #e5e9ef;
 	border-top:0;
+	font-size: 12px;
 	@include small {
-		padding:1em 15px;
+		padding:20px 15px;
 	}
 	@include medium {
-		padding:1em 30px;
+		padding:40px 30px;
 	}
 }
 

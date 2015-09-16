@@ -1,3 +1,5 @@
+/*$text-title-height: 12pt;*/
+/*$text-smaller-height: 12pt;*/
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* line 1, ../../src/stylesheets/abstraction/_helpers.scss */
@@ -26,48 +28,54 @@ a:focus {
 }
 
 /* line 15, ../../src/stylesheets/main.scss */
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 19, ../../src/stylesheets/main.scss */
 body {
   padding-bottom: 8px;
 }
 
-/* line 20, ../../src/stylesheets/main.scss */
+/* line 24, ../../src/stylesheets/main.scss */
 .primaryContent {
   max-width: 880px;
 }
 @media (min-width: 768px) {
-  /* line 20, ../../src/stylesheets/main.scss */
+  /* line 24, ../../src/stylesheets/main.scss */
   .primaryContent {
     margin-top: 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 20, ../../src/stylesheets/main.scss */
+  /* line 24, ../../src/stylesheets/main.scss */
   .primaryContent {
-    margin-top: 40px;
+    margin: 40px 0;
   }
 }
 
-/* line 30, ../../src/stylesheets/main.scss */
+/* line 34, ../../src/stylesheets/main.scss */
 .content {
   background-color: #fafafa;
   padding: 1em;
   border: 1px solid #e5e9ef;
   border-top: 0;
+  font-size: 12px;
 }
 @media (min-width: 768px) {
-  /* line 30, ../../src/stylesheets/main.scss */
+  /* line 34, ../../src/stylesheets/main.scss */
   .content {
-    padding: 1em 15px;
+    padding: 20px 15px;
   }
 }
 @media (min-width: 992px) {
-  /* line 30, ../../src/stylesheets/main.scss */
+  /* line 34, ../../src/stylesheets/main.scss */
   .content {
-    padding: 1em 30px;
+    padding: 40px 30px;
   }
 }
 
-/* line 43, ../../src/stylesheets/main.scss */
+/* line 48, ../../src/stylesheets/main.scss */
 blockquote {
   font-size: 12pt;
   font-weight: bold;
@@ -300,7 +308,7 @@ ul.usp-list li {
   background: url("https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png") no-repeat top 2px left;
   padding-left: 20px;
   margin-bottom: 5px;
-  font-size: 12pt;
+  font-size: 12px;
 }
 
 /* line 1, ../../src/stylesheets/components/_cta-lower.scss */
@@ -318,9 +326,10 @@ ul.usp-list li {
 
 /* line 1, ../../src/stylesheets/components/_more-info.scss */
 a.more-info {
-  background: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/icon-more-info.png") no-repeat top left;
+  background: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/icon-more-info.png") no-repeat top 2px left;
   padding-left: 20px;
   display: inline-block;
+  font-size: 12px;
   width: 100%;
   margin-bottom: 40px;
 }

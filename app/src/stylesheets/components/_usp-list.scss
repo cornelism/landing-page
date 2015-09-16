@@ -8,6 +8,6 @@ ul.usp-list {
 		background: url($bullet) no-repeat top 2px left;
 		padding-left: $icon-space;
 		margin-bottom: 5px;
-		font-size:12pt;
+		font-size:$text-content-height;
 	}
 }
