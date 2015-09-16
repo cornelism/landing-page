@@ -66,12 +66,13 @@
 	}
 	
 	h2 {
-		padding: 0;
+		padding: 10px 0px;
 		text-align: center;
 		color: $grey-title-topic;
 		text-decoration: none;
 		margin: 0;
 		@include small {
+			padding: 0;
 			margin: 112px 0 0 0;
 		}
 		@include medium {

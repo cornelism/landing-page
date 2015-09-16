@@ -4,8 +4,8 @@
 /* No media query since this is the default in Bootstrap */
 /* line 1, ../../src/stylesheets/abstraction/_helpers.scss */
 .nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+  margin: 0;
 }
 
 /* line 6, ../../src/stylesheets/abstraction/_helpers.scss */
@@ -15,61 +15,69 @@
   text-align: right;
 }
 
-/* line 5, ../../src/stylesheets/main.scss */
+@font-face {
+  font-family: "BNPSansCondensed";
+  src: url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.eot");
+  src: url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.eot?#iefix") format("embedded-opentype"), url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.woff") format("woff"), url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.ttf") format("truetype"), url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.svg#BnppSans-r") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+/* line 6, ../../src/stylesheets/main.scss */
 a {
   text-decoration: underline;
   color: #085f40;
 }
 
-/* line 10, ../../src/stylesheets/main.scss */
+/* line 11, ../../src/stylesheets/main.scss */
 a:hover,
 a:focus {
   color: #085f40;
 }
 
-/* line 15, ../../src/stylesheets/main.scss */
+/* line 16, ../../src/stylesheets/main.scss */
 p:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 19, ../../src/stylesheets/main.scss */
+/* line 20, ../../src/stylesheets/main.scss */
 body {
   padding-bottom: 8px;
 }
 
-/* line 24, ../../src/stylesheets/main.scss */
+/* line 25, ../../src/stylesheets/main.scss */
 .primaryContent {
   max-width: 880px;
   padding-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 24, ../../src/stylesheets/main.scss */
+  /* line 25, ../../src/stylesheets/main.scss */
   .primaryContent {
     margin-top: 20px;
     padding-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 24, ../../src/stylesheets/main.scss */
+  /* line 25, ../../src/stylesheets/main.scss */
   .primaryContent {
     margin: 40px 0;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 37, ../../src/stylesheets/main.scss */
+  /* line 38, ../../src/stylesheets/main.scss */
   .container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 37, ../../src/stylesheets/main.scss */
+  /* line 38, ../../src/stylesheets/main.scss */
   .container {
     width: 880px;
   }
 }
 
-/* line 46, ../../src/stylesheets/main.scss */
+/* line 47, ../../src/stylesheets/main.scss */
 .content {
   background-color: #fafafa;
   padding: 1em;
@@ -77,20 +85,20 @@ body {
   font-size: 12px;
 }
 @media (min-width: 768px) {
-  /* line 46, ../../src/stylesheets/main.scss */
+  /* line 47, ../../src/stylesheets/main.scss */
   .content {
     padding: 20px 15px;
     border-top: 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 46, ../../src/stylesheets/main.scss */
+  /* line 47, ../../src/stylesheets/main.scss */
   .content {
     padding: 40px 30px;
   }
 }
 
-/* line 60, ../../src/stylesheets/main.scss */
+/* line 61, ../../src/stylesheets/main.scss */
 blockquote {
   font-size: 12pt;
   font-weight: bold;
@@ -150,6 +158,8 @@ blockquote {
   top: -5px;
   padding: 15px;
   height: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 @media (min-width: 768px) {
   /* line 18, ../../src/stylesheets/components/_visual-header.scss */
@@ -158,8 +168,10 @@ blockquote {
     bottom: 0;
     top: auto;
     right: 30px;
-    padding: 10px;
+    padding: 20px;
     width: 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 @media (min-width: 992px) {
@@ -168,8 +180,10 @@ blockquote {
     padding: 30px;
   }
 }
-/* line 38, ../../src/stylesheets/components/_visual-header.scss */
+/* line 42, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta h1 {
+  font-family: "BNPSansCondensed";
+  font-size: 32px;
   position: static !important;
   padding: 0 0 1em 0;
   background-color: #00965e;
@@ -178,39 +192,39 @@ blockquote {
   background-color: initial;
 }
 @media (min-width: 768px) {
-  /* line 38, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 42, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta h1 {
     padding: 0 0 0.5em 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 50, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 56, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
     margin-bottom: 0.5em;
   }
 }
 @media (min-width: 992px) {
-  /* line 50, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 56, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
     margin-bottom: 1em;
   }
 }
-/* line 60, ../../src/stylesheets/components/_visual-header.scss */
+/* line 66, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta .tel {
-  padding: 12px 12px;
+  padding: 11px 12px;
   display: inline-block;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 60, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 66, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
-    padding: 5px 0 0 0;
+    padding: 11px 0 0 12px;
   }
 }
 @media (min-width: 992px) {
-  /* line 60, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 66, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
-    padding: 12px 12px;
+    padding: 11px 12px;
   }
 }
 
@@ -219,7 +233,7 @@ blockquote {
   color: white;
   background-color: #009966;
   border: 0;
-  padding: 10px 12px 10px 12px;
+  padding: 12px 12px 10px 12px;
   margin-bottom: 10px;
   text-decoration: none;
 }
@@ -237,25 +251,28 @@ blockquote {
 
 /* line 24, ../../src/stylesheets/components/_button.scss */
 .btn {
-  font-weight: bold;
+  font-family: "BNPSansCondensed";
+  font-size: 16px;
+  line-height: 16px;
+  /*font-weight:bold;*/
   text-transform: uppercase;
   border: 0;
 }
-/* line 28, ../../src/stylesheets/components/_button.scss */
+/* line 31, ../../src/stylesheets/components/_button.scss */
 .btn.white {
   background-color: white;
   color: black;
 }
-/* line 31, ../../src/stylesheets/components/_button.scss */
+/* line 34, ../../src/stylesheets/components/_button.scss */
 .btn.white:hover {
   background-color: #d3d3d3;
 }
-/* line 35, ../../src/stylesheets/components/_button.scss */
+/* line 38, ../../src/stylesheets/components/_button.scss */
 .btn.grey {
   background-color: #ebebec;
   color: black;
 }
-/* line 38, ../../src/stylesheets/components/_button.scss */
+/* line 41, ../../src/stylesheets/components/_button.scss */
 .btn.grey:hover {
   background-color: #d3d3d3;
 }
@@ -331,7 +348,7 @@ blockquote {
 }
 /* line 68, ../../src/stylesheets/components/_topic.scss */
 .topic h2 {
-  padding: 0;
+  padding: 10px 0px;
   text-align: center;
   color: #5f5f5f;
   text-decoration: none;
@@ -340,6 +357,7 @@ blockquote {
 @media (min-width: 768px) {
   /* line 68, ../../src/stylesheets/components/_topic.scss */
   .topic h2 {
+    padding: 0;
     margin: 112px 0 0 0;
   }
 }
@@ -349,17 +367,17 @@ blockquote {
     margin: 140px 0 0 0;
   }
 }
-/* line 82, ../../src/stylesheets/components/_topic.scss */
+/* line 83, ../../src/stylesheets/components/_topic.scss */
 .topic img,
 .topic h2 {
   opacity: 0.5;
 }
-/* line 87, ../../src/stylesheets/components/_topic.scss */
+/* line 88, ../../src/stylesheets/components/_topic.scss */
 .topic.topic-1, .topic.topic-2, .topic.topic-3 {
   background-image: none;
 }
 @media (min-width: 768px) {
-  /* line 87, ../../src/stylesheets/components/_topic.scss */
+  /* line 88, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-1, .topic.topic-2, .topic.topic-3 {
     height: 160px;
     background-size: 228px 106px;
@@ -368,26 +386,26 @@ blockquote {
   }
 }
 @media (min-width: 992px) {
-  /* line 87, ../../src/stylesheets/components/_topic.scss */
+  /* line 88, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-1, .topic.topic-2, .topic.topic-3 {
     background-size: 293px 136px;
     height: 218px;
   }
 }
 @media (min-width: 768px) {
-  /* line 105, ../../src/stylesheets/components/_topic.scss */
+  /* line 106, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-1 {
     background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-1.png");
   }
 }
 @media (min-width: 768px) {
-  /* line 111, ../../src/stylesheets/components/_topic.scss */
+  /* line 112, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-2 {
     background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-2.png");
   }
 }
 @media (min-width: 768px) {
-  /* line 117, ../../src/stylesheets/components/_topic.scss */
+  /* line 118, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-3 {
     background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-3.png");
   }
@@ -402,7 +420,7 @@ ul.usp-list {
 }
 /* line 7, ../../src/stylesheets/components/_usp-list.scss */
 ul.usp-list li {
-  background: url("https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png") no-repeat top 2px left;
+  background: url("https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png") no-repeat top left;
   padding-left: 20px;
   margin-bottom: 5px;
   font-size: 12px;
@@ -423,7 +441,7 @@ ul.usp-list li {
 
 /* line 1, ../../src/stylesheets/components/_more-info.scss */
 a.more-info {
-  background: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/icon-more-info.png") no-repeat top 2px left;
+  background: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/icon-more-info.png") no-repeat top 1px left;
   padding-left: 20px;
   display: inline-block;
   font-size: 12px;

@@ -21,14 +21,18 @@
 		top: -5px;
 		padding: 15px;
 		height: auto;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
 		
 		@include small {
 			position: absolute;
 			bottom: 0;
 			top: auto;
 			right: 30px;
-			padding: 10px;
+			padding: 20px;
 			width: 50%;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
 		}
 		
 		@include medium {
@@ -36,6 +40,8 @@
 		}
 		
 		h1 {
+			font-family: "BNPSansCondensed";
+			font-size: 32px;
 			position: static !important;
 			padding: 0 0 1em 0;
 			background-color: $green;
@@ -58,15 +64,15 @@
 		}
 		
 		.tel {
-			padding: 12px 12px;
+			padding: 11px 12px;
 			display: inline-block;
 			margin-bottom: 0;
 			@include small {
-				padding:5px 0 0 0;
+				padding:11px 0 0 12px;
 			}
 			
 			@include medium {
-				padding: 12px 12px;
+				padding: 11px 12px;
 			}
 		}
 	}

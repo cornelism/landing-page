@@ -5,7 +5,7 @@ ul.usp-list {
 	list-style-type:none;
 	/*margin-bottom: 2em;*/
 	li {
-		background: url($bullet) no-repeat top 2px left;
+		background: url($bullet) no-repeat top left;
 		padding-left: $icon-space;
 		margin-bottom: 5px;
 		font-size:$text-content-height;
