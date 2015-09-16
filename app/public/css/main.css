@@ -40,11 +40,13 @@ body {
 /* line 24, ../../src/stylesheets/main.scss */
 .primaryContent {
   max-width: 880px;
+  padding-bottom: 0;
 }
 @media (min-width: 768px) {
   /* line 24, ../../src/stylesheets/main.scss */
   .primaryContent {
     margin-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -54,7 +56,20 @@ body {
   }
 }
 
-/* line 34, ../../src/stylesheets/main.scss */
+@media (min-width: 768px) {
+  /* line 36, ../../src/stylesheets/main.scss */
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 36, ../../src/stylesheets/main.scss */
+  .container {
+    width: 880px;
+  }
+}
+
+/* line 45, ../../src/stylesheets/main.scss */
 .content {
   background-color: #fafafa;
   padding: 1em;
@@ -63,19 +78,19 @@ body {
   font-size: 12px;
 }
 @media (min-width: 768px) {
-  /* line 34, ../../src/stylesheets/main.scss */
+  /* line 45, ../../src/stylesheets/main.scss */
   .content {
     padding: 20px 15px;
   }
 }
 @media (min-width: 992px) {
-  /* line 34, ../../src/stylesheets/main.scss */
+  /* line 45, ../../src/stylesheets/main.scss */
   .content {
     padding: 40px 30px;
   }
 }
 
-/* line 48, ../../src/stylesheets/main.scss */
+/* line 59, ../../src/stylesheets/main.scss */
 blockquote {
   font-size: 12pt;
   font-weight: bold;
@@ -84,7 +99,7 @@ blockquote {
   padding: 0;
   display: inline-block;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 767px) {

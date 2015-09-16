@@ -23,11 +23,22 @@ body {
 
 .primaryContent {
 	max-width: 880px;
+	padding-bottom: 0;
 	@include small {
 		margin-top:20px;
+		padding-bottom: 20px;
 	}
 	@include medium {
 		margin:40px 0;
+	}
+}
+
+.container {
+	@include small {
+		width: 750px;
+	}
+	@include medium {
+		width: 880px;
 	}
 }
 
@@ -53,7 +64,7 @@ blockquote {
 	padding: 0;
 	display: inline-block;
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 40px;
 }
 
 @import "components/row";
