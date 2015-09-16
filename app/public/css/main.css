@@ -22,6 +22,7 @@
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 /* line 6, ../../src/stylesheets/main.scss */
 a {
@@ -171,7 +172,7 @@ blockquote {
     top: auto;
     right: 30px;
     padding: 20px;
-    width: 50%;
+    /*width: 50%;*/
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -187,7 +188,7 @@ blockquote {
   font-family: "BNPSansCondensed";
   font-size: 32px;
   position: static !important;
-  padding: 0 0 1em 0;
+  padding: 0 0 10px 0;
   background-color: #00965e;
   text-transform: uppercase;
   box-shadow: none;
@@ -200,31 +201,31 @@ blockquote {
   }
 }
 @media (min-width: 768px) {
-  /* line 56, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 57, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
     margin-bottom: 0.5em;
   }
 }
 @media (min-width: 992px) {
-  /* line 56, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 57, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
     margin-bottom: 1em;
   }
 }
-/* line 66, ../../src/stylesheets/components/_visual-header.scss */
+/* line 67, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta .tel {
-  padding: 11px 12px;
+  padding: 11px 0 0 12px;
   display: inline-block;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 66, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 67, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 11px 0 0 12px;
   }
 }
 @media (min-width: 992px) {
-  /* line 66, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 67, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 11px 12px;
   }
@@ -302,6 +303,20 @@ blockquote {
   -webkit-border-top-right-radius: 10px;
   border-bottom: 1px solid transparent;
   background: none;
+  /*	h2 {
+  		padding: 10px 0px;
+  		text-align: center;
+  		color: $grey-title-topic;
+  		text-decoration: none;
+  		margin: 0;
+  		@include small {
+  			padding: 0;
+  			margin: 112px 0 0 0;
+  		}
+  		@include medium {
+  			margin: 140px 0 0 0;
+  		}
+  	}*/
 }
 @media (min-width: 768px) {
   /* line 10, ../../src/stylesheets/components/_topic.scss */
@@ -324,62 +339,59 @@ blockquote {
   background-color: #fafafa;
 }
 /* line 44, ../../src/stylesheets/components/_topic.scss */
-.topic.active img,
-.topic.active h2, .topic:hover img,
-.topic:hover h2 {
+.topic.active img, .topic:hover img {
   opacity: 1;
 }
 /* line 50, ../../src/stylesheets/components/_topic.scss */
 .topic.active {
   border-bottom: 1px solid transparent;
-}
-/* line 52, ../../src/stylesheets/components/_topic.scss */
-.topic.active h2 {
-  color: #5f5f5f;
+  /*		h2 {
+  			color: $grey-title-topic;
+  		}*/
 }
 /* line 57, ../../src/stylesheets/components/_topic.scss */
 .topic a {
-  height: 100%;
   display: inline-block;
   text-decoration: none;
   width: 100%;
-}
-/* line 64, ../../src/stylesheets/components/_topic.scss */
-.topic img {
-  width: 100%;
-}
-/* line 68, ../../src/stylesheets/components/_topic.scss */
-.topic h2 {
-  padding: 10px 0px;
+  box-sizing: border-box;
   text-align: center;
-  color: #5f5f5f;
-  text-decoration: none;
-  margin: 0;
+  font-family: "BNPSansCondensed";
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 0;
 }
 @media (min-width: 768px) {
-  /* line 68, ../../src/stylesheets/components/_topic.scss */
-  .topic h2 {
-    padding: 0;
-    margin: 112px 0 0 0;
+  /* line 57, ../../src/stylesheets/components/_topic.scss */
+  .topic a {
+    height: 100%;
+    padding: 112px 0 0 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 68, ../../src/stylesheets/components/_topic.scss */
-  .topic h2 {
-    margin: 140px 0 0 0;
+  /* line 57, ../../src/stylesheets/components/_topic.scss */
+  .topic a {
+    padding: 140px 0 0 0;
+    font-size: 24px;
+    line-height: 34px;
   }
 }
-/* line 83, ../../src/stylesheets/components/_topic.scss */
-.topic img,
-.topic h2 {
+/* line 82, ../../src/stylesheets/components/_topic.scss */
+.topic img {
+  width: 100%;
+}
+/* line 101, ../../src/stylesheets/components/_topic.scss */
+.topic img {
   opacity: 0.5;
 }
-/* line 88, ../../src/stylesheets/components/_topic.scss */
+/* line 106, ../../src/stylesheets/components/_topic.scss */
 .topic.topic-1, .topic.topic-2, .topic.topic-3 {
   background-image: none;
 }
 @media (min-width: 768px) {
-  /* line 88, ../../src/stylesheets/components/_topic.scss */
+  /* line 106, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-1, .topic.topic-2, .topic.topic-3 {
     height: 160px;
     background-size: 228px 106px;
@@ -388,26 +400,26 @@ blockquote {
   }
 }
 @media (min-width: 992px) {
-  /* line 88, ../../src/stylesheets/components/_topic.scss */
+  /* line 106, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-1, .topic.topic-2, .topic.topic-3 {
     background-size: 293px 136px;
     height: 218px;
   }
 }
 @media (min-width: 768px) {
-  /* line 106, ../../src/stylesheets/components/_topic.scss */
+  /* line 124, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-1 {
     background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-1.png");
   }
 }
 @media (min-width: 768px) {
-  /* line 112, ../../src/stylesheets/components/_topic.scss */
+  /* line 130, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-2 {
     background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-2.png");
   }
 }
 @media (min-width: 768px) {
-  /* line 118, ../../src/stylesheets/components/_topic.scss */
+  /* line 136, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-3 {
     background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-3.png");
   }

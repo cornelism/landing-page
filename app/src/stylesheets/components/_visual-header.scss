@@ -30,7 +30,7 @@
 			top: auto;
 			right: 30px;
 			padding: 20px;
-			width: 50%;
+			/*width: 50%;*/
 			border-bottom-left-radius: 0;
 			border-bottom-right-radius: 0;
 		}
@@ -42,8 +42,9 @@
 		h1 {
 			font-family: "BNPSansCondensed";
 			font-size: 32px;
+			
 			position: static !important;
-			padding: 0 0 1em 0;
+			padding: 0 0 10px 0;
 			background-color: $green;
 			text-transform: uppercase;
 			box-shadow: none;
@@ -64,7 +65,8 @@
 		}
 		
 		.tel {
-			padding: 11px 12px;
+			
+			padding: 11px 0 0 12px;
 			display: inline-block;
 			margin-bottom: 0;
 			@include small {
