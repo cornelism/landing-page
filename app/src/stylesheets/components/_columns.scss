@@ -1,5 +1,14 @@
 div[class^="col"]{
 	.primaryContent & {
-		display: inline;
+
+	    @include mobile {
+	    	display: inline-block;
+	   		width: 100%;
+	    	border-radius: 0;
+	    }
+	    
+		@include small {
+			display: inline;	
+		}
 	}
 }	

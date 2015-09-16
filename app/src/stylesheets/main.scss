@@ -24,6 +24,7 @@ body {
 .primaryContent {
 	max-width: 880px;
 	padding-bottom: 0;
+	
 	@include small {
 		margin-top:20px;
 		padding-bottom: 20px;
@@ -46,10 +47,10 @@ body {
 	background-color:#fafafa;
 	padding:1em;
 	border:1px solid #e5e9ef;
-	border-top:0;
 	font-size: 12px;
 	@include small {
 		padding:20px 15px;
+		border-top:0;
 	}
 	@include medium {
 		padding:40px 30px;

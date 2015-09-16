@@ -1,20 +1,41 @@
+.topics {
+	margin-bottom: 20px;
+	
+	@include small {
+		margin-bottom:0	;
+	}
+	
+}
+
 .topic {
 	box-sizing: border-box;
 	background-color: #fff;
-    border-top: 1px solid #e5e9ef;
-	border-bottom: 1px solid #e5e9ef;
+	border: 1px solid #e5e9ef;
 	box-sizing: border-box;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
+	border-bottom: 1px solid transparent;
 	background: none;
 	
+	@include small {
+		border-top: 1px solid #e5e9ef;
+		border-bottom: 1px solid #e5e9ef;
+	}
+	
+	@include medium {
+		
+	}
 	
 	&:first-child,
 	&:last-child {
 		border-left: 1px solid #e5e9ef;
 		border-right: 1px solid #e5e9ef;
+	}
+	
+	&:last-child {
+		border-bottom: 1px solid #e5e9ef;
 	}
 	
 	&.active,
@@ -49,6 +70,7 @@
 		text-align: center;
 		color: $grey-title-topic;
 		text-decoration: none;
+		margin: 0;
 		@include small {
 			margin: 112px 0 0 0;
 		}
@@ -80,17 +102,7 @@
 		}
 	}
 	
-/*	
-	div {
-	    background: url(img_flwr.gif);
-	    background-size: 80px 60px;
-	    background-repeat: no-repeat;
-	    background-position: center;
-	}
-}*/
-	
 	&.topic-1 {
-		background-image: none;
 		@include small {
 			background-image: url($img-topic-1);
 		}
@@ -107,8 +119,4 @@
 			background-image: url($img-topic-3);
 		}
 	}
-	
 }
-
-
-
