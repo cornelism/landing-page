@@ -261,54 +261,115 @@ blockquote {
   border-top-right-radius: 10px;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
+  background: none;
+  /*	
+  	div {
+  	    background: url(img_flwr.gif);
+  	    background-size: 80px 60px;
+  	    background-repeat: no-repeat;
+  	    background-position: center;
+  	}
+  }*/
 }
-/* line 12, ../../src/stylesheets/components/_topic.scss */
+/* line 14, ../../src/stylesheets/components/_topic.scss */
 .topic:first-child, .topic:last-child {
   border-left: 1px solid #e5e9ef;
   border-right: 1px solid #e5e9ef;
 }
-/* line 18, ../../src/stylesheets/components/_topic.scss */
+/* line 20, ../../src/stylesheets/components/_topic.scss */
 .topic.active, .topic:hover {
-  border-bottom: 1px solid transparent;
   background-color: #fafafa;
 }
-/* line 22, ../../src/stylesheets/components/_topic.scss */
+/* line 23, ../../src/stylesheets/components/_topic.scss */
 .topic.active img,
 .topic.active h2, .topic:hover img,
 .topic:hover h2 {
   opacity: 1;
 }
-@media (min-width: 768px) {
-  /* line 1, ../../src/stylesheets/components/_topic.scss */
-  .topic {
-    height: 160px;
-  }
+/* line 29, ../../src/stylesheets/components/_topic.scss */
+.topic.active {
+  border-bottom: 1px solid transparent;
 }
-@media (min-width: 992px) {
-  /* line 1, ../../src/stylesheets/components/_topic.scss */
-  .topic {
-    height: 218px;
-  }
+/* line 31, ../../src/stylesheets/components/_topic.scss */
+.topic.active h2 {
+  color: #5f5f5f;
 }
 /* line 36, ../../src/stylesheets/components/_topic.scss */
 .topic a {
   height: 100%;
   display: inline-block;
+  text-decoration: none;
+  width: 100%;
 }
-/* line 41, ../../src/stylesheets/components/_topic.scss */
+/* line 43, ../../src/stylesheets/components/_topic.scss */
 .topic img {
   width: 100%;
 }
-/* line 45, ../../src/stylesheets/components/_topic.scss */
+/* line 47, ../../src/stylesheets/components/_topic.scss */
 .topic h2 {
   padding: 0;
-  margin: 8px 0 0 0;
   text-align: center;
+  color: #5f5f5f;
+  text-decoration: none;
 }
-/* line 51, ../../src/stylesheets/components/_topic.scss */
+@media (min-width: 768px) {
+  /* line 47, ../../src/stylesheets/components/_topic.scss */
+  .topic h2 {
+    margin: 112px 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 47, ../../src/stylesheets/components/_topic.scss */
+  .topic h2 {
+    margin: 140px 0 0 0;
+  }
+}
+/* line 60, ../../src/stylesheets/components/_topic.scss */
 .topic img,
 .topic h2 {
   opacity: 0.5;
+}
+/* line 65, ../../src/stylesheets/components/_topic.scss */
+.topic.topic-1, .topic.topic-2, .topic.topic-3 {
+  background-image: none;
+}
+@media (min-width: 768px) {
+  /* line 65, ../../src/stylesheets/components/_topic.scss */
+  .topic.topic-1, .topic.topic-2, .topic.topic-3 {
+    height: 160px;
+    background-size: 228px 106px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 992px) {
+  /* line 65, ../../src/stylesheets/components/_topic.scss */
+  .topic.topic-1, .topic.topic-2, .topic.topic-3 {
+    background-size: 293px 136px;
+    height: 218px;
+  }
+}
+/* line 92, ../../src/stylesheets/components/_topic.scss */
+.topic.topic-1 {
+  background-image: none;
+}
+@media (min-width: 768px) {
+  /* line 92, ../../src/stylesheets/components/_topic.scss */
+  .topic.topic-1 {
+    background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-1.png");
+  }
+}
+@media (min-width: 768px) {
+  /* line 99, ../../src/stylesheets/components/_topic.scss */
+  .topic.topic-2 {
+    background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-2.png");
+  }
+}
+@media (min-width: 768px) {
+  /* line 105, ../../src/stylesheets/components/_topic.scss */
+  .topic.topic-3 {
+    background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-3.png");
+  }
 }
 
 /*	bullet: https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png*/

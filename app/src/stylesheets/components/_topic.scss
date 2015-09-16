@@ -8,6 +8,8 @@
 	border-top-right-radius: 10px;
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
+	background: none;
+	
 	
 	&:first-child,
 	&:last-child {
@@ -17,7 +19,6 @@
 	
 	&.active,
 	&:hover {
-		border-bottom: 1px solid transparent;
 		background-color: #fafafa;
 		img,
 		h2 {
@@ -25,17 +26,18 @@
 		}
 	}
 	
-	@include small {
-		height: 160px;
-	}
-	
-	@include medium {
-		height: 218px;
+	&.active {
+		border-bottom: 1px solid transparent;
+		h2 {
+			color: $grey-title-topic;
+		}
 	}
 	
 	a {
-	height: 100%;
-    display: inline-block;
+		height: 100%;
+	    display: inline-block;
+	    text-decoration: none;
+	    width: 100%;
 	}
 	
 	img {
@@ -44,12 +46,69 @@
 	
 	h2 {
 		padding: 0;
-		margin: 8px 0 0 0;
 		text-align: center;
+		color: $grey-title-topic;
+		text-decoration: none;
+		@include small {
+			margin: 112px 0 0 0;
+		}
+		@include medium {
+			margin: 140px 0 0 0;
+		}
 	}
 	
 	img,
 	h2 {
 		opacity: 0.5;	
 	}
+	
+	&.topic-1,
+	&.topic-2,
+	&.topic-3 {
+		background-image: none;
+		
+		@include small {
+			height: 160px;
+			background-size: 228px 106px;
+			background-position: top center;
+			background-repeat: no-repeat;
+		}
+		
+		@include medium {
+			background-size: 293px 136px;
+			height: 218px;
+		}
+	}
+	
+/*	
+	div {
+	    background: url(img_flwr.gif);
+	    background-size: 80px 60px;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	}
+}*/
+	
+	&.topic-1 {
+		background-image: none;
+		@include small {
+			background-image: url($img-topic-1);
+		}
+	}
+	
+	&.topic-2 {
+		@include small {
+			background-image: url($img-topic-2);
+		}
+	}
+	
+	&.topic-3 {
+		@include small {
+			background-image: url($img-topic-3);
+		}
+	}
+	
 }
+
+
+
