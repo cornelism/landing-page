@@ -87,7 +87,7 @@ body {
 @media (min-width: 768px) {
   /* line 47, ../../src/stylesheets/main.scss */
   .content {
-    padding: 20px 15px;
+    padding: 40px 15px;
     border-top: 0;
   }
 }
@@ -100,8 +100,10 @@ body {
 
 /* line 61, ../../src/stylesheets/main.scss */
 blockquote {
-  font-size: 12pt;
+  font-family: "BNPSansCondensed";
+  font-size: 24px;
   font-weight: bold;
+  line-height: 30px;
   border: 0;
   margin: 0;
   padding: 0;
@@ -194,7 +196,7 @@ blockquote {
 @media (min-width: 768px) {
   /* line 42, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta h1 {
-    padding: 0 0 0.5em 0;
+    padding: 0 0 10px 0;
   }
 }
 @media (min-width: 768px) {
