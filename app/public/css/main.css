@@ -14,31 +14,60 @@
 }
 
 /* line 5, ../../src/stylesheets/main.scss */
-a:hover,
-a:focus {
-  color: #008559;
+a {
+  text-decoration: underline;
+  color: #085f40;
 }
 
-/* line 11, ../../src/stylesheets/main.scss */
+/* line 10, ../../src/stylesheets/main.scss */
+a:hover,
+a:focus {
+  color: #085f40;
+}
+
+/* line 15, ../../src/stylesheets/main.scss */
 body {
   padding-bottom: 8px;
 }
 
-/* line 16, ../../src/stylesheets/main.scss */
+/* line 20, ../../src/stylesheets/main.scss */
 .primaryContent {
   max-width: 880px;
 }
+@media (min-width: 768px) {
+  /* line 20, ../../src/stylesheets/main.scss */
+  .primaryContent {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 20, ../../src/stylesheets/main.scss */
+  .primaryContent {
+    margin-top: 40px;
+  }
+}
 
-/* line 20, ../../src/stylesheets/main.scss */
+/* line 30, ../../src/stylesheets/main.scss */
 .content {
   background-color: #fafafa;
-  /*margin-top:20px;*/
   padding: 1em;
   border: 1px solid #e5e9ef;
   border-top: 0;
 }
+@media (min-width: 768px) {
+  /* line 30, ../../src/stylesheets/main.scss */
+  .content {
+    padding: 1em 15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 30, ../../src/stylesheets/main.scss */
+  .content {
+    padding: 1em 30px;
+  }
+}
 
-/* line 28, ../../src/stylesheets/main.scss */
+/* line 43, ../../src/stylesheets/main.scss */
 blockquote {
   font-size: 12pt;
   font-weight: bold;
@@ -65,20 +94,20 @@ blockquote {
 
 /* line 1, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header {
-  margin-bottom: 1em;
+  margin-bottom: 10px;
   color: white;
   display: inline-block;
 }
 @media (min-width: 768px) {
   /* line 1, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header {
-    margin-bottom: 2em;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
   /* line 1, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header {
-    margin-bottom: 3em;
+    margin-bottom: 40px;
   }
 }
 /* line 18, ../../src/stylesheets/components/_visual-header.scss */
@@ -94,7 +123,7 @@ blockquote {
   .visual-header #header-cta {
     position: absolute;
     bottom: 0;
-    top: initial;
+    top: auto;
     right: 30px;
     padding: 10px;
     width: 50%;
@@ -159,68 +188,101 @@ blockquote {
   border: 0;
   padding: 10px 12px 10px 12px;
   margin-bottom: 10px;
+  text-decoration: none;
 }
-/* line 8, ../../src/stylesheets/components/_button.scss */
+/* line 9, ../../src/stylesheets/components/_button.scss */
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .btn-default.dropdown-toggle {
   background-color: #008578;
   border-color: #008578;
   color: white;
 }
-/* line 17, ../../src/stylesheets/components/_button.scss */
+/* line 18, ../../src/stylesheets/components/_button.scss */
 .visual-header .btn-default {
   margin: 0;
+  float: left;
 }
 
-/* line 22, ../../src/stylesheets/components/_button.scss */
+/* line 24, ../../src/stylesheets/components/_button.scss */
+.btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+}
+/* line 28, ../../src/stylesheets/components/_button.scss */
 .btn.white {
   background-color: white;
-  border: 0;
   color: black;
-  text-transform: uppercase;
-  float: left;
-  font-weight: bold;
+}
+/* line 31, ../../src/stylesheets/components/_button.scss */
+.btn.white:hover {
+  background-color: #d3d3d3;
+}
+/* line 35, ../../src/stylesheets/components/_button.scss */
+.btn.grey {
+  background-color: #ebebec;
+  color: black;
+}
+/* line 38, ../../src/stylesheets/components/_button.scss */
+.btn.grey:hover {
+  background-color: #d3d3d3;
 }
 
 /* line 1, ../../src/stylesheets/components/_topic.scss */
 .topic {
   box-sizing: border-box;
   background-color: #fff;
-  /*	border-top: 1px solid #e5e9ef;
-  	border-left: 1px solid #e5e9ef;*/
+  border-top: 1px solid #e5e9ef;
   border-bottom: 1px solid #e5e9ef;
-  min-height: 180px;
   box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
 }
-/* line 10, ../../src/stylesheets/components/_topic.scss */
-.topic:first-child {
+/* line 12, ../../src/stylesheets/components/_topic.scss */
+.topic:first-child, .topic:last-child {
   border-left: 1px solid #e5e9ef;
-}
-/* line 14, ../../src/stylesheets/components/_topic.scss */
-.topic:last-child {
   border-right: 1px solid #e5e9ef;
 }
 /* line 18, ../../src/stylesheets/components/_topic.scss */
-.topic img {
-  width: 100%;
-}
-/* line 22, ../../src/stylesheets/components/_topic.scss */
-.topic h2 {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-/* line 28, ../../src/stylesheets/components/_topic.scss */
 .topic.active, .topic:hover {
   border-bottom: 1px solid transparent;
   background-color: #fafafa;
 }
-/* line 32, ../../src/stylesheets/components/_topic.scss */
+/* line 22, ../../src/stylesheets/components/_topic.scss */
 .topic.active img,
 .topic.active h2, .topic:hover img,
 .topic:hover h2 {
   opacity: 1;
 }
-/* line 39, ../../src/stylesheets/components/_topic.scss */
+@media (min-width: 768px) {
+  /* line 1, ../../src/stylesheets/components/_topic.scss */
+  .topic {
+    height: 160px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 1, ../../src/stylesheets/components/_topic.scss */
+  .topic {
+    height: 218px;
+  }
+}
+/* line 36, ../../src/stylesheets/components/_topic.scss */
+.topic a {
+  height: 100%;
+  display: inline-block;
+}
+/* line 41, ../../src/stylesheets/components/_topic.scss */
+.topic img {
+  width: 100%;
+}
+/* line 45, ../../src/stylesheets/components/_topic.scss */
+.topic h2 {
+  padding: 0;
+  margin: 8px 0 0 0;
+  text-align: center;
+}
+/* line 51, ../../src/stylesheets/components/_topic.scss */
 .topic img,
 .topic h2 {
   opacity: 0.5;
@@ -231,12 +293,34 @@ blockquote {
 ul.usp-list {
   padding: 0;
   list-style-type: none;
-  margin-bottom: 2em;
+  /*margin-bottom: 2em;*/
 }
 /* line 7, ../../src/stylesheets/components/_usp-list.scss */
 ul.usp-list li {
-  background: url("https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png") no-repeat top left;
+  background: url("https://static.bnpparibasfortis.be/Images/images/Icons/bullet_green.png") no-repeat top 2px left;
   padding-left: 20px;
   margin-bottom: 5px;
   font-size: 12pt;
+}
+
+/* line 1, ../../src/stylesheets/components/_cta-lower.scss */
+.cta-lower {
+  margin-bottom: 40px;
+}
+/* line 3, ../../src/stylesheets/components/_cta-lower.scss */
+.cta-lower .btn {
+  margin-bottom: 20px;
+}
+/* line 5, ../../src/stylesheets/components/_cta-lower.scss */
+.cta-lower .btn.last {
+  margin-left: 15px;
+}
+
+/* line 1, ../../src/stylesheets/components/_more-info.scss */
+a.more-info {
+  background: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/icon-more-info.png") no-repeat top left;
+  padding-left: 20px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px;
 }

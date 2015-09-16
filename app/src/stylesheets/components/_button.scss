@@ -4,6 +4,7 @@
 	border:0;
 	padding: 10px 12px 10px 12px;
 	margin-bottom:10px;
+	text-decoration: none;
 	
 	&:hover,
 	&:focus,
@@ -16,14 +17,26 @@
 	}
 	.visual-header & {
 		margin: 0;
+		float: left;
 	}
 }
 
-.btn.white {
-	background-color: white;
-	border: 0;
-	color: black;
+.btn{
+	font-weight:bold;
 	text-transform: uppercase;
-	float: left;
-	font-weight: bold;
+	border: 0;
+	&.white {
+		background-color: white;
+		color: black;
+		&:hover {
+			background-color: #d3d3d3;
+		}
+	}
+	&.grey {
+		background-color: $grey-button;
+		color: black;
+		&:hover {
+			background-color: #d3d3d3;
+		}
+	}
 }

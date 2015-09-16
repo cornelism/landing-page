@@ -3,10 +3,10 @@
 ul.usp-list {
 	padding: 0;
 	list-style-type:none;
-	margin-bottom: 2em;
+	/*margin-bottom: 2em;*/
 	li {
-		background: url($bullet) no-repeat top left;
-		padding-left: 20px;
+		background: url($bullet) no-repeat top 2px left;
+		padding-left: $icon-space;
 		margin-bottom: 5px;
 		font-size:12pt;
 	}

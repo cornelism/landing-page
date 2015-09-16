@@ -2,10 +2,14 @@
 @import "abstraction/breakpoints";
 @import "abstraction/helpers";
 
+a {
+	text-decoration: underline;
+	color:$green-link;
+}
+
 a:hover,
 a:focus {
-	color:#008559;
-	
+	color:$green-link;
 }
 
 body {
@@ -15,14 +19,25 @@ body {
 
 .primaryContent {
 	max-width: 880px;
+	@include small {
+		margin-top:20px;
+	}
+	@include medium {
+		margin-top:40px;
+	}
 }
 
 .content {
 	background-color:#fafafa;
-	/*margin-top:20px;*/
 	padding:1em;
 	border:1px solid #e5e9ef;
 	border-top:0;
+	@include small {
+		padding:1em 15px;
+	}
+	@include medium {
+		padding:1em 30px;
+	}
 }
 
 blockquote {
@@ -42,3 +57,5 @@ blockquote {
 @import "components/button";
 @import "components/topic";
 @import "components/usp-list";
+@import "components/cta-lower";
+@import "components/more-info";
