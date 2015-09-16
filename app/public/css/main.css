@@ -87,6 +87,7 @@ blockquote {
   background-color: #00965e;
   top: -5px;
   padding: 15px;
+  height: auto;
 }
 @media (min-width: 768px) {
   /* line 18, ../../src/stylesheets/components/_visual-header.scss */
@@ -105,46 +106,47 @@ blockquote {
     padding: 30px;
   }
 }
-/* line 37, ../../src/stylesheets/components/_visual-header.scss */
+/* line 38, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta h1 {
-  position: initial;
+  position: static !important;
   padding: 0 0 1em 0;
+  background-color: #00965e;
   text-transform: uppercase;
-  box-shadow: initial;
+  box-shadow: none;
   background-color: initial;
 }
 @media (min-width: 768px) {
-  /* line 37, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 38, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta h1 {
     padding: 0 0 0.5em 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 48, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 50, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
     margin-bottom: 0.5em;
   }
 }
 @media (min-width: 992px) {
-  /* line 48, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 50, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
     margin-bottom: 1em;
   }
 }
-/* line 58, ../../src/stylesheets/components/_visual-header.scss */
+/* line 60, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta .tel {
   padding: 12px 12px;
   display: inline-block;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 58, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 60, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 5px 0 0 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 58, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 60, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 12px 12px;
   }
