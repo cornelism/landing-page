@@ -13,12 +13,7 @@ a:focus {
 	color:$green-link;
 }
 
-/*p:last-of-type {
-	margin-bottom: 0;
-}*/
-
 .tel {
-	/*padding: 11px 0 0 12px;*/
 	display: inline-block;
 	margin-bottom: 0;
 	
@@ -26,7 +21,6 @@ a:focus {
 		  display: block;
 		  text-align: center;
 		  font-size: 16px;
-		  /*padding: 15px 0 0 0;*/
 		  line-height: 16px;
 	}
 	
@@ -40,7 +34,6 @@ a:focus {
 }
 
 .primaryContent {
-	max-width: 880px;
 	padding-bottom: 0;
 	
 	@include small {
@@ -61,7 +54,7 @@ a:focus {
 		width: 750px;
 	}
 	@include medium {
-		width: 880px;
+		width: 940px;
 	}
 }
 
@@ -79,19 +72,6 @@ a:focus {
 		padding:40px 30px;
 	}
 }
-
-/*blockquote {
-	font-family: "BNPSansCondensed";
-	font-size: 24px;
-	font-weight: bold;
-	line-height: 30px;
-	border: 0;
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-    width: 100%;
-    margin-bottom: 40px;
-}*/
 
 @import "theme/quotes";
 @import "components/row";
