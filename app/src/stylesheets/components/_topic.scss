@@ -50,6 +50,11 @@
 		a {
 			color: $green;
 		}
+		@include mobile {
+			&:last-child {
+				border-bottom: 1px solid #e5e9ef;	
+			}
+		}
 	}
 	
 	a {
@@ -66,7 +71,7 @@
 		
 	    @include small {
 	    	height: 100%;
-			padding: 112px 0 0 0;
+			padding: 111px 0 0 0;
 			font-size: 20px;
 			line-height: 20px;
 		}

@@ -70,6 +70,7 @@ a:focus {
 	padding:1em;
 	border:1px solid #e5e9ef;
 	font-size: 12px;
+	display: inline-block;
 	@include small {
 		padding:40px 15px;
 		border-top:0;
