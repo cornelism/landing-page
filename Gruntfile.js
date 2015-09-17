@@ -11,18 +11,20 @@ module.exports = function(grunt) {
         connect: {
             options: {
                 port: 4000,
-                livereload: 35729,
+                livereload: 9090,
                 // Change this to '0.0.0.0' to access the server from outside
                 hostname: '0.0.0.0'
             },
             livereload: {
                 options: {
+                	port: 4000,
                     open: true,
                     base: [
                         '.tmp',
                         '<%= config.app %>/public'
                     ]
-                }
+                },
+                port: 9090
             },
         },
         watch: {

@@ -49,6 +49,7 @@ a:focus {
 .tel {
   display: inline-block;
   margin-bottom: 0;
+  color: white;
 }
 @media (max-width: 380px) {
   /* line 16, ../../src/stylesheets/main.scss */
@@ -72,48 +73,48 @@ a:focus {
   }
 }
 
-/* line 36, ../../src/stylesheets/main.scss */
+/* line 37, ../../src/stylesheets/main.scss */
 .primaryContent {
   padding-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 36, ../../src/stylesheets/main.scss */
+  /* line 37, ../../src/stylesheets/main.scss */
   .primaryContent {
     margin-top: 20px;
     padding-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 36, ../../src/stylesheets/main.scss */
+  /* line 37, ../../src/stylesheets/main.scss */
   .primaryContent {
     margin: 40px 0;
   }
 }
 
-/* line 48, ../../src/stylesheets/main.scss */
+/* line 49, ../../src/stylesheets/main.scss */
 .container {
   min-width: 300px;
 }
 @media (max-width: 767px) {
-  /* line 48, ../../src/stylesheets/main.scss */
+  /* line 49, ../../src/stylesheets/main.scss */
   .container {
     padding: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 48, ../../src/stylesheets/main.scss */
+  /* line 49, ../../src/stylesheets/main.scss */
   .container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 48, ../../src/stylesheets/main.scss */
+  /* line 49, ../../src/stylesheets/main.scss */
   .container {
     width: 940px;
   }
 }
 
-/* line 61, ../../src/stylesheets/main.scss */
+/* line 62, ../../src/stylesheets/main.scss */
 .content {
   background-color: #fafafa;
   padding: 1em;
@@ -122,14 +123,14 @@ a:focus {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 61, ../../src/stylesheets/main.scss */
+  /* line 62, ../../src/stylesheets/main.scss */
   .content {
     padding: 40px 15px;
     border-top: 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 61, ../../src/stylesheets/main.scss */
+  /* line 62, ../../src/stylesheets/main.scss */
   .content {
     padding: 40px 30px;
   }
