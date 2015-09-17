@@ -18,6 +18,9 @@
 	.visual-header & {
 		margin: 0;
 		float: left;
+		@include max-bp(380px){
+			float:none;
+		}
 	}
 }
 
@@ -25,9 +28,13 @@
 	font-family: "BNPSansCondensed";
 	font-size: 16px;
 	line-height: 16px;
-	/*font-weight:bold;*/
+	font-weight:bold;
 	text-transform: uppercase;
 	border: 0;
+	@include max-bp(380px) {
+		float: none;
+  		display: block;
+	}
 	&.white {
 		background-color: white;
 		color: black;

@@ -15,6 +15,15 @@
   text-align: right;
 }
 
+@media (min-width: 768px) {
+  /* line 12, ../../src/stylesheets/abstraction/_helpers.scss */
+  .sm-align-right {
+    width: 100%;
+    display: block;
+    text-align: right;
+  }
+}
+
 @font-face {
   font-family: "BNPSansCondensed";
   src: url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.eot");
@@ -36,49 +45,81 @@ a:focus {
   color: #085f40;
 }
 
-/* line 16, ../../src/stylesheets/main.scss */
-p:last-of-type {
+/*p:last-of-type {
+	margin-bottom: 0;
+}*/
+/* line 20, ../../src/stylesheets/main.scss */
+.tel {
+  /*padding: 11px 0 0 12px;*/
+  display: inline-block;
   margin-bottom: 0;
 }
-
-/* line 20, ../../src/stylesheets/main.scss */
-body {
-  padding-bottom: 8px;
+@media (max-width: 380px) {
+  /* line 20, ../../src/stylesheets/main.scss */
+  .tel {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    /*padding: 15px 0 0 0;*/
+    line-height: 16px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 20, ../../src/stylesheets/main.scss */
+  .tel {
+    padding: 11px 0 0 12px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 20, ../../src/stylesheets/main.scss */
+  .tel {
+    padding: 11px 12px;
+  }
 }
 
-/* line 25, ../../src/stylesheets/main.scss */
+/* line 42, ../../src/stylesheets/main.scss */
 .primaryContent {
   max-width: 880px;
   padding-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 25, ../../src/stylesheets/main.scss */
+  /* line 42, ../../src/stylesheets/main.scss */
   .primaryContent {
     margin-top: 20px;
     padding-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 25, ../../src/stylesheets/main.scss */
+  /* line 42, ../../src/stylesheets/main.scss */
   .primaryContent {
     margin: 40px 0;
   }
 }
 
+/* line 55, ../../src/stylesheets/main.scss */
+.container {
+  min-width: 300px;
+}
+@media (max-width: 767px) {
+  /* line 55, ../../src/stylesheets/main.scss */
+  .container {
+    padding: 0;
+  }
+}
 @media (min-width: 768px) {
-  /* line 38, ../../src/stylesheets/main.scss */
+  /* line 55, ../../src/stylesheets/main.scss */
   .container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 38, ../../src/stylesheets/main.scss */
+  /* line 55, ../../src/stylesheets/main.scss */
   .container {
     width: 880px;
   }
 }
 
-/* line 47, ../../src/stylesheets/main.scss */
+/* line 68, ../../src/stylesheets/main.scss */
 .content {
   background-color: #fafafa;
   padding: 1em;
@@ -86,20 +127,20 @@ body {
   font-size: 12px;
 }
 @media (min-width: 768px) {
-  /* line 47, ../../src/stylesheets/main.scss */
+  /* line 68, ../../src/stylesheets/main.scss */
   .content {
     padding: 40px 15px;
     border-top: 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 47, ../../src/stylesheets/main.scss */
+  /* line 68, ../../src/stylesheets/main.scss */
   .content {
     padding: 40px 30px;
   }
 }
 
-/* line 61, ../../src/stylesheets/main.scss */
+/* line 82, ../../src/stylesheets/main.scss */
 blockquote {
   font-family: "BNPSansCondensed";
   font-size: 24px;
@@ -127,6 +168,7 @@ blockquote {
     display: inline-block;
     width: 100%;
     border-radius: 0;
+    padding: 0;
   }
 }
 @media (min-width: 768px) {
@@ -142,6 +184,12 @@ blockquote {
   color: white;
   display: inline-block;
 }
+@media (max-width: 767px) {
+  /* line 1, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header {
+    margin-bottom: 10px !important;
+  }
+}
 @media (min-width: 768px) {
   /* line 1, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header {
@@ -154,7 +202,7 @@ blockquote {
     margin-bottom: 40px;
   }
 }
-/* line 18, ../../src/stylesheets/components/_visual-header.scss */
+/* line 22, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta {
   position: relative;
   background-color: #00965e;
@@ -165,7 +213,7 @@ blockquote {
   border-bottom-right-radius: 5px;
 }
 @media (min-width: 768px) {
-  /* line 18, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 22, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta {
     position: absolute;
     bottom: 0;
@@ -178,54 +226,71 @@ blockquote {
   }
 }
 @media (min-width: 992px) {
-  /* line 18, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 22, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta {
     padding: 30px;
   }
 }
-/* line 42, ../../src/stylesheets/components/_visual-header.scss */
+/* line 46, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta h1 {
   font-family: "BNPSansCondensed";
   font-size: 32px;
+  line-height: 32px;
   position: static !important;
-  padding: 0 0 10px 0;
+  padding: 0 0 5px 0;
   background-color: #00965e;
   text-transform: uppercase;
   box-shadow: none;
   background-color: initial;
 }
 @media (min-width: 768px) {
-  /* line 42, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 46, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header #header-cta h1 {
+    padding: 0 0 5px 0;
+  }
+}
+@media (min-width: 768px) {
+  /* line 46, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta h1 {
     padding: 0 0 10px 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 57, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 65, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
-    margin-bottom: 0.5em;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 992px) {
-  /* line 57, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 65, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta p#header-txt {
-    margin-bottom: 1em;
+    margin-bottom: 20px;
   }
 }
-/* line 67, ../../src/stylesheets/components/_visual-header.scss */
+/* line 75, ../../src/stylesheets/components/_visual-header.scss */
 .visual-header #header-cta .tel {
   padding: 11px 0 0 12px;
   display: inline-block;
   margin-bottom: 0;
 }
+@media (max-width: 380px) {
+  /* line 75, ../../src/stylesheets/components/_visual-header.scss */
+  .visual-header #header-cta .tel {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0 0 0;
+    line-height: 16px;
+  }
+}
 @media (min-width: 768px) {
-  /* line 67, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 75, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 11px 0 0 12px;
   }
 }
 @media (min-width: 992px) {
-  /* line 67, ../../src/stylesheets/components/_visual-header.scss */
+  /* line 75, ../../src/stylesheets/components/_visual-header.scss */
   .visual-header #header-cta .tel {
     padding: 11px 12px;
   }
@@ -251,31 +316,44 @@ blockquote {
   margin: 0;
   float: left;
 }
+@media (max-width: 380px) {
+  /* line 18, ../../src/stylesheets/components/_button.scss */
+  .visual-header .btn-default {
+    float: none;
+  }
+}
 
-/* line 24, ../../src/stylesheets/components/_button.scss */
+/* line 27, ../../src/stylesheets/components/_button.scss */
 .btn {
   font-family: "BNPSansCondensed";
   font-size: 16px;
   line-height: 16px;
-  /*font-weight:bold;*/
+  font-weight: bold;
   text-transform: uppercase;
   border: 0;
 }
-/* line 31, ../../src/stylesheets/components/_button.scss */
+@media (max-width: 380px) {
+  /* line 27, ../../src/stylesheets/components/_button.scss */
+  .btn {
+    float: none;
+    display: block;
+  }
+}
+/* line 38, ../../src/stylesheets/components/_button.scss */
 .btn.white {
   background-color: white;
   color: black;
 }
-/* line 34, ../../src/stylesheets/components/_button.scss */
+/* line 41, ../../src/stylesheets/components/_button.scss */
 .btn.white:hover {
   background-color: #d3d3d3;
 }
-/* line 38, ../../src/stylesheets/components/_button.scss */
+/* line 45, ../../src/stylesheets/components/_button.scss */
 .btn.grey {
   background-color: #ebebec;
   color: black;
 }
-/* line 41, ../../src/stylesheets/components/_button.scss */
+/* line 48, ../../src/stylesheets/components/_button.scss */
 .btn.grey:hover {
   background-color: #d3d3d3;
 }
@@ -451,6 +529,12 @@ ul.usp-list li {
 /* line 5, ../../src/stylesheets/components/_cta-lower.scss */
 .cta-lower .btn.last {
   margin-left: 15px;
+}
+@media (max-width: 390px) {
+  /* line 5, ../../src/stylesheets/components/_cta-lower.scss */
+  .cta-lower .btn.last {
+    margin-left: 0;
+  }
 }
 
 /* line 1, ../../src/stylesheets/components/_more-info.scss */

@@ -4,6 +4,9 @@
 		margin-bottom: 20px;
 		&.last {
 			margin-left: 15px;
+			@include max-bp(390px){
+				margin-left: 0;
+			}
 		}
 	}
 }

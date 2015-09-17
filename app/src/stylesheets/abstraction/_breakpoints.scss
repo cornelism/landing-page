@@ -16,3 +16,11 @@
 @mixin large {
 	@media (min-width: 1200px) { @content; }
 }
+
+@mixin min-bp($min-width) {
+	@media (min-width: $min-width) { @content; }
+}
+
+@mixin max-bp($max-width) {
+	@media (max-width: $max-width) { @content; }
+}

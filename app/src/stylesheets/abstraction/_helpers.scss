@@ -8,3 +8,11 @@
     display: block;
 	text-align: right;
 }
+
+.sm-align-right {
+	@include small {
+		width: 100%;
+	    display: block;
+		text-align: right;
+	}
+}
