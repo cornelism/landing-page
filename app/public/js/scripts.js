@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(e){
 	$(".toggler").click(function(){
 		$('.panel-collapse.in').each(function(){
 			$(this).removeClass('in').addClass("collapse");
