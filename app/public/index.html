@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>LP Car Insurance</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/imports.css">
 	<link rel="stylesheet" type="text/css" href="https://static.bnpparibasfortis.be/Images/Generic/css/dsoRenderer/bootstrap.dsa.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://static.bnpparibasfortis.be/Images/Generic/js/dsoRenderer/bootstrap.dsa.js"></script>
+	<script src="js/scripts.js"></script>
+
 </head>
 <body>
 
@@ -28,26 +34,35 @@
 			
 			<div class="row">
 				<div class="col-sm-12">
-	                <div class="topics">
+	                <div class="topics" id="panel-control">
 						<div class="col-sm-4 nopadding topic topic-1 active">
-							<a href="~PROBE(103)~" target="_blank">
+							<a href="#panel1" target="_blank" data-toggle="collapse" role="button" aria-controls="panel1">
 							  <b>Mijn nieuwe auto</b><br/>optimaal beschermd
 							</a>
 						</div>
 	                    <div class="col-sm-4 nopadding topic topic-2">
-							<a href="~PROBE(103)~" target="_blank">
+							<a href="#panel2" target="_blank" data-toggle="collapse" role="button" aria-controls="panel2">
 							  <b>Mijn goede rijgedrag</b><br/>levenslang beloond
 							</a>
 						</div>
 						<div class="col-sm-4 nopadding topic topic-3">
-							<a href="~PROBE(103)~" target="_blank">
+							<a href="#panel3" target="_blank" data-toggle="collapse" role="button" aria-controls="panel3">
 							  <b>Mijn betalingen</b><br/>op maat van mijn budget
 							</a>
 						</div>
+						<div class="panel-collapse collapse" id="panel1">PANEL 1</div>
+						<div class="panel-collapse collapse" id="panel2">PANEL 2</div>
+						<div class="panel-collapse collapse" id="panel3">PANEL 3</div>
 					</div>
 				</div>
 				
-				<div class="col-sm-12">
+<!--				<div id="accordion">
+					<div class="collapse" id="panel1">PANEL 1</div>
+					<div class="collapse" id="panel2">PANEL 2</div>
+					<div class="collapse" id="panel3">PANEL 3</div>
+				</div>-->
+				
+				<div class="col-sm-12 collapse" id="panel1" style="display:none;">
 					<div class="content">
 						<blockquote>
 							&quot;Mijn nieuwe auto kost me een pak geld dus ik wil me indekken tegen alle risico's.<br>
@@ -66,10 +81,10 @@
 							<a class="btn btn-default grey last" href="">Bel mij</a>
 							<p class="tel align-right">of bel <b>027 62 20 00</b></span>
 						</div>
-						<!--<div class="info-text">-->
-							<p>Dit publicitair document bevat algemene informatie over verzekeringsproducten van AG Insurance. Voor deze verzekeringsproducten gelden uitsluitingen, beperkingen en voorwaarden gesteld aan het verzekerd risico. De juiste omvang en looptijd ervan leest u in de contractvoorwaarden. De algemene voorwaarden vindt u op onze website <a href="www.bnpparibasfortis.be" target="_blank">www.bnpparibasfortis.be</a>. Deze informatie, een premieberekening en offerte, is ook gratis beschikbaar bij uw vertrouwd BNPPF-kantoor.  </p>
-							<p>Op onze verzekeringscontracten is het Belgisch recht van toepassing. Voor al uw vragen en problemen kunt u in eerste instantie terecht bij uw adviseur. Klachten kunnen ook ingediend worden bij BNP Paribas Fortis NV Klachtenmanagement (JQABD), Warandeberg 3, 1000 Brussel, fax 02/2287200. Indien de voorgestelde oplossing geen voldoening schenkt, kunt u uw klacht ook indienen bij de Ombudsdienst Verzekeringen, te 1000 Brussel, de Meeûssquare 35. Tel. : 02/547 58 71 – Fax: 02/547 59 75 - <a href="www.ombudsman.as" target="_blank">www.ombudsman.as</a>.</p>
-						<!--</div>-->
+						
+						<p>Dit publicitair document bevat algemene informatie over verzekeringsproducten van AG Insurance. Voor deze verzekeringsproducten gelden uitsluitingen, beperkingen en voorwaarden gesteld aan het verzekerd risico. De juiste omvang en looptijd ervan leest u in de contractvoorwaarden. De algemene voorwaarden vindt u op onze website <a href="www.bnpparibasfortis.be" target="_blank">www.bnpparibasfortis.be</a>. Deze informatie, een premieberekening en offerte, is ook gratis beschikbaar bij uw vertrouwd BNPPF-kantoor.  </p>
+						<p>Op onze verzekeringscontracten is het Belgisch recht van toepassing. Voor al uw vragen en problemen kunt u in eerste instantie terecht bij uw adviseur. Klachten kunnen ook ingediend worden bij BNP Paribas Fortis NV Klachtenmanagement (JQABD), Warandeberg 3, 1000 Brussel, fax 02/2287200. Indien de voorgestelde oplossing geen voldoening schenkt, kunt u uw klacht ook indienen bij de Ombudsdienst Verzekeringen, te 1000 Brussel, de Meeûssquare 35. Tel. : 02/547 58 71 – Fax: 02/547 59 75 - <a href="www.ombudsman.as" target="_blank">www.ombudsman.as</a>.</p>
+						
 					</div>
 				</div>
 			</div>	

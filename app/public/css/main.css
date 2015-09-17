@@ -182,7 +182,7 @@ blockquote {
 
 @media (max-width: 767px) {
   /* line 2, ../../src/stylesheets/components/_columns.scss */
-  .primaryContent div[class^="col"] {
+  .primaryContent div[class^="col-"] {
     display: inline-block;
     width: 100%;
     border-radius: 0;
@@ -191,7 +191,7 @@ blockquote {
 }
 @media (min-width: 768px) {
   /* line 2, ../../src/stylesheets/components/_columns.scss */
-  .primaryContent div[class^="col"] {
+  .primaryContent div[class^="col-"] {
     display: inline;
   }
 }
