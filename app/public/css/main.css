@@ -140,7 +140,19 @@ a:focus {
   }
 }
 
-/* line 82, ../../src/stylesheets/main.scss */
+/*blockquote {
+	font-family: "BNPSansCondensed";
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+}*/
+/* line 1, ../../src/stylesheets/theme/_quotes.scss */
 blockquote {
   font-family: "BNPSansCondensed";
   font-size: 24px;
@@ -152,6 +164,12 @@ blockquote {
   display: inline-block;
   width: 100%;
   margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  /* line 1, ../../src/stylesheets/theme/_quotes.scss */
+  blockquote {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {

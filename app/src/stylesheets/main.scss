@@ -79,7 +79,7 @@ a:focus {
 	}
 }
 
-blockquote {
+/*blockquote {
 	font-family: "BNPSansCondensed";
 	font-size: 24px;
 	font-weight: bold;
@@ -90,8 +90,9 @@ blockquote {
 	display: inline-block;
     width: 100%;
     margin-bottom: 40px;
-}
+}*/
 
+@import "theme/quotes";
 @import "components/row";
 @import "components/columns";
 @import "components/visual-header";
