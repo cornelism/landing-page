@@ -1,7 +1,11 @@
 $(document).ready(function(){
-	$("#panel-control a").click(function(){
+	$(".toggler").click(function(){
 		$('.panel-collapse.in').each(function(){
 			$(this).removeClass('in').addClass("collapse");
 		});
+		$('.toggler').each(function(){
+			$(this).closest(".topic").removeClass('active');
+		});
+		$(this).closest(".topic").addClass("active");
 	});
 });
