@@ -4,7 +4,6 @@
 	@include small {
 		margin-bottom:0	;
 	}
-	
 }
 
 .topic {
@@ -41,17 +40,16 @@
 	&.active,
 	&:hover {
 		background-color: #fafafa;
-		img/*,
-		h2 */{
+		img {
 			opacity: 1;
 		}
 	}
 	
 	&.active {
 		border-bottom: 1px solid transparent;
-/*		h2 {
-			color: $grey-title-topic;
-		}*/
+		a {
+			color: $green;
+		}
 	}
 	
 	a {
@@ -64,6 +62,7 @@
 		font-size: 20px;
 		line-height: 20px;
 		padding: 10px 0;
+		color: $grey-title-topic;
 		
 	    @include small {
 	    	height: 100%;
@@ -83,23 +82,7 @@
 		width: 100%;
 	}
 	
-/*	h2 {
-		padding: 10px 0px;
-		text-align: center;
-		color: $grey-title-topic;
-		text-decoration: none;
-		margin: 0;
-		@include small {
-			padding: 0;
-			margin: 112px 0 0 0;
-		}
-		@include medium {
-			margin: 140px 0 0 0;
-		}
-	}*/
-	
-	img/*,
-	h2 */{
+	img {
 		opacity: 0.5;	
 	}
 	
