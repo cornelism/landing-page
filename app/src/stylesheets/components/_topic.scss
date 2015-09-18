@@ -8,24 +8,14 @@
 
 .topic {
 	box-sizing: border-box;
-	background-color: #fff;
 	border: 1px solid #e5e9ef;
 	box-sizing: border-box;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	-webkit-border-top-left-radius: 10px;
-	-webkit-border-top-right-radius: 10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
 	border-bottom: 1px solid transparent;
-	background: none;
-	
-	@include small {
-		border-top: 1px solid #e5e9ef;
-		border-bottom: 1px solid #e5e9ef;
-	}
-	
-	@include medium {
-		
-	}
+	/*background: none;*/
 	
 	&:first-child,
 	&:last-child {
@@ -37,22 +27,43 @@
 		border-bottom: 1px solid #e5e9ef;
 	}
 	
-	&.active,
-	&:hover {
-		background-color: #fafafa;
-		img {
-			opacity: 1;
-		}
-	}
-	
 	&.active {
 		border-bottom: 1px solid transparent;
 		a {
 			color: $green;
 		}
+		
+		&:after {
+			background-color: #fafafa;
+		}
+		
 		@include mobile {
 			&:last-child {
 				border-bottom: 1px solid #e5e9ef;	
+			}
+		}
+	}
+	
+	&.topic-1 {
+		@include small {
+			&:after {
+				background-image: url($img-topic-1);
+			}
+		}
+	}
+	
+	&.topic-2 {
+		@include small {
+			&:after {
+				background-image: url($img-topic-2);	
+			}
+		}
+	}
+	
+	&.topic-3 {
+		@include small {
+			&:after {
+				background-image: url($img-topic-3);
 			}
 		}
 	}
@@ -68,6 +79,8 @@
 		line-height: 20px;
 		padding: 10px 0;
 		color: $grey-title-topic;
+		z-index: 5;
+		position: relative;
 		
 	    @include small {
 	    	height: 100%;
@@ -83,47 +96,31 @@
 		}
 	}
 	
-	img {
-		width: 100%;
-	}
-	
-	img {
-		opacity: 0.5;	
-	}
-	
-	&.topic-1,
-	&.topic-2,
-	&.topic-3 {
-		background-image: none;
+	@include small {
+		height: 160px;
+		border-top: 1px solid #e5e9ef;
+		border-bottom: 1px solid #e5e9ef;
 		
-		@include small {
-			height: 160px;
+		&:after {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
 			background-size: 228px 106px;
 			background-position: top center;
 			background-repeat: no-repeat;
+			content: "";
+			z-index: 0;
 		}
+	}
+	
+	@include medium {
+		height: 218px;
 		
-		@include medium {
-			background-size: 293px 136px;
-			height: 218px;
-		}
-	}
-	
-	&.topic-1 {
-		@include small {
-			background-image: url($img-topic-1);
-		}
-	}
-	
-	&.topic-2 {
-		@include small {
-			background-image: url($img-topic-2);
-		}
-	}
-	
-	&.topic-3 {
-		@include small {
-			background-image: url($img-topic-3);
+		&:after {
+		    background-size: 293px 136px;
+		    
 		}
 	}
 }
