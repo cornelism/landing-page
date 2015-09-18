@@ -1,6 +1,6 @@
 .btn-default {
 	color:white;
-	background-color:#009966;
+	/*background-color:#009966;*/
 	border:0;
 	padding: 12px 12px 10px 12px;
 	margin-bottom:10px;
@@ -28,13 +28,22 @@
 	font-family: "BNPSansCondensed";
 	font-size: 16px;
 	line-height: 16px;
-	/*font-weight:bold;*/
 	text-transform: uppercase;
 	border: 0;
+	
 	@include max-bp(380px) {
 		float: none;
   		display: block;
 	}
+	
+	&.green {
+		background-color: $green-button;
+		color: white;
+		&:hover {
+			background-color: $green-button-hover;
+		}
+	}
+	
 	&.white {
 		background-color: white;
 		color: black;
@@ -42,6 +51,7 @@
 			background-color: #d3d3d3;
 		}
 	}
+	
 	&.grey {
 		background-color: $grey-button;
 		color: black;

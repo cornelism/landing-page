@@ -55,6 +55,9 @@
 			text-transform: uppercase;
 			box-shadow: none;
 			background-color: initial;
+			
+			color: white;
+			
 			@include small {
 				padding: 0 0 10px 0;
 			}

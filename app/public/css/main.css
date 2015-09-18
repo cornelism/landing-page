@@ -215,6 +215,7 @@ blockquote {
   text-transform: uppercase;
   box-shadow: none;
   background-color: initial;
+  color: white;
 }
 @media (min-width: 768px) {
   .visual-header #header-cta h1 {
@@ -258,7 +259,7 @@ blockquote {
 
 .btn-default {
   color: white;
-  background-color: #009966;
+  /*background-color:#009966;*/
   border: 0;
   padding: 12px 12px 10px 12px;
   margin-bottom: 10px;
@@ -283,7 +284,6 @@ blockquote {
   font-family: "BNPSansCondensed";
   font-size: 16px;
   line-height: 16px;
-  /*font-weight:bold;*/
   text-transform: uppercase;
   border: 0;
 }
@@ -292,6 +292,13 @@ blockquote {
     float: none;
     display: block;
   }
+}
+.btn.green {
+  background-color: #00965e;
+  color: white;
+}
+.btn.green:hover {
+  background-color: #007046;
 }
 .btn.white {
   background-color: white;
