@@ -51,7 +51,9 @@ module.exports = function(grunt) {
                 options: {
                     sassDir: ['app/src/stylesheets'],
                     cssDir: ['app/public/css'],
-                    environment: 'development'
+                    environment: 'development',
+                    outputStyle: 'expanded',
+                    noLineComments: true
                 }
             },
             prod: {
