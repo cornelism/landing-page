@@ -15,7 +15,6 @@
 	-webkit-border-top-left-radius: 5px;
 	-webkit-border-top-right-radius: 5px;
 	border-bottom: 1px solid transparent;
-	/*background: none;*/
 	
 	&:first-child,
 	&:last-child {
@@ -41,6 +40,10 @@
 			&:last-child {
 				border-bottom: 1px solid #e5e9ef;	
 			}
+		}
+		
+		@include small {
+			border-bottom: 1px solid #fafafa;
 		}
 	}
 	
@@ -90,7 +93,7 @@
 		}
 		
 		@include medium {
-			padding: 138px 0 0 0;
+			padding: 139px 0 0 0;
 			font-size: 27px;
 			line-height: 35px;
 		}

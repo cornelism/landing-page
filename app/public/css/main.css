@@ -382,54 +382,59 @@ blockquote {
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
   border-bottom: 1px solid transparent;
-  /*background: none;*/
 }
-/* line 20, ../../src/stylesheets/components/_topic.scss */
+/* line 19, ../../src/stylesheets/components/_topic.scss */
 .topic:first-child, .topic:last-child {
   border-left: 1px solid #e5e9ef;
   border-right: 1px solid #e5e9ef;
 }
-/* line 26, ../../src/stylesheets/components/_topic.scss */
+/* line 25, ../../src/stylesheets/components/_topic.scss */
 .topic:last-child {
   border-bottom: 1px solid #e5e9ef;
 }
-/* line 30, ../../src/stylesheets/components/_topic.scss */
+/* line 29, ../../src/stylesheets/components/_topic.scss */
 .topic.active {
   border-bottom: 1px solid transparent;
 }
-/* line 32, ../../src/stylesheets/components/_topic.scss */
+/* line 31, ../../src/stylesheets/components/_topic.scss */
 .topic.active a {
   color: #00965e;
 }
-/* line 36, ../../src/stylesheets/components/_topic.scss */
+/* line 35, ../../src/stylesheets/components/_topic.scss */
 .topic.active:after {
   background-color: #fafafa;
 }
 @media (max-width: 767px) {
-  /* line 41, ../../src/stylesheets/components/_topic.scss */
+  /* line 40, ../../src/stylesheets/components/_topic.scss */
   .topic.active:last-child {
     border-bottom: 1px solid #e5e9ef;
   }
 }
 @media (min-width: 768px) {
-  /* line 49, ../../src/stylesheets/components/_topic.scss */
+  /* line 29, ../../src/stylesheets/components/_topic.scss */
+  .topic.active {
+    border-bottom: 1px solid #fafafa;
+  }
+}
+@media (min-width: 768px) {
+  /* line 52, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-1:after {
     background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-1.png");
   }
 }
 @media (min-width: 768px) {
-  /* line 57, ../../src/stylesheets/components/_topic.scss */
+  /* line 60, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-2:after {
     background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-2.png");
   }
 }
 @media (min-width: 768px) {
-  /* line 65, ../../src/stylesheets/components/_topic.scss */
+  /* line 68, ../../src/stylesheets/components/_topic.scss */
   .topic.topic-3:after {
     background-image: url("https://static.bnpparibasfortis.be/Images/campaigns/2015/201509_car_insurance/topic-3.png");
   }
 }
-/* line 71, ../../src/stylesheets/components/_topic.scss */
+/* line 74, ../../src/stylesheets/components/_topic.scss */
 .topic a {
   display: inline-block;
   text-decoration: none;
@@ -445,7 +450,7 @@ blockquote {
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 71, ../../src/stylesheets/components/_topic.scss */
+  /* line 74, ../../src/stylesheets/components/_topic.scss */
   .topic a {
     height: 100%;
     padding: 111px 0 0 0;
@@ -454,9 +459,9 @@ blockquote {
   }
 }
 @media (min-width: 992px) {
-  /* line 71, ../../src/stylesheets/components/_topic.scss */
+  /* line 74, ../../src/stylesheets/components/_topic.scss */
   .topic a {
-    padding: 138px 0 0 0;
+    padding: 139px 0 0 0;
     font-size: 27px;
     line-height: 35px;
   }
@@ -468,7 +473,7 @@ blockquote {
     border-top: 1px solid #e5e9ef;
     border-bottom: 1px solid #e5e9ef;
   }
-  /* line 104, ../../src/stylesheets/components/_topic.scss */
+  /* line 107, ../../src/stylesheets/components/_topic.scss */
   .topic:after {
     position: absolute;
     top: 0;
@@ -487,7 +492,7 @@ blockquote {
   .topic {
     height: 218px;
   }
-  /* line 121, ../../src/stylesheets/components/_topic.scss */
+  /* line 124, ../../src/stylesheets/components/_topic.scss */
   .topic:after {
     background-size: 293px 136px;
   }
