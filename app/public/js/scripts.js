@@ -2,8 +2,8 @@ $(document).ready(function(){
 	$(".toggler").click(function(){
 		$('.panel-collapse.in').removeClass('in').addClass("collapse");
 		$('.toggler').each(function(){
-			$(this).closest(".topic").removeClass('active');
+			$(this).closest(".topic").removeClass('active').removeClass("disabled");
 		});
-		$(this).closest(".topic").addClass("active");
+		$(this).closest(".topic").addClass("active").addClass("disabled");
 	});
 });

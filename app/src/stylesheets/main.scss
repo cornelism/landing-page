@@ -41,6 +41,7 @@ a:focus {
 		margin-top:20px;
 		padding-bottom: 20px;
 	}
+	
 	@include medium {
 		margin:40px 0;
 	}
@@ -51,11 +52,25 @@ a:focus {
 	@include mobile {
 		padding: 0;
 	}
+	
 	@include small {
 		width: 750px;
 	}
+	
 	@include medium {
 		width: 940px;
+	}
+	// IE Fix Bootstrap
+	.msie & {
+		width: 100%;
+		
+		@include small {
+			width: 750px;
+		}
+		
+		@include medium {
+			width: 940px;
+		}
 	}
 }
 
