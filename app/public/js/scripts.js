@@ -1,8 +1,6 @@
 $(document).ready(function(e){
 	$(".toggler").click(function(){
-		$('.panel-collapse.in').each(function(){
-			$(this).removeClass('in').addClass("collapse");
-		});
+		$('.panel-collapse.in').removeClass('in').addClass("collapse");
 		$('.toggler').each(function(){
 			$(this).closest(".topic").removeClass('active');
 		});
