@@ -1,0 +1,20 @@
+.tel {
+	display: inline-block;
+	margin-bottom: 0;
+	color: white;
+	
+	@include max-bp(380px) {
+		  display: block;
+		  text-align: center;
+		  font-size: 16px;
+		  line-height: 16px;
+	}
+	
+	@include small {
+		padding:11px 0 0 12px;
+	}
+	
+	@include medium {
+		padding: 11px 12px;
+	}
+}

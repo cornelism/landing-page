@@ -1,0 +1,12 @@
+.primaryContent {
+	padding-bottom: 0;
+	
+	@include small {
+		margin-top:20px;
+		padding-bottom: 20px;
+	}
+	
+	@include medium {
+		margin:40px 0;
+	}
+}

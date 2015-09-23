@@ -19,64 +19,6 @@
   }
 }
 
-@font-face {
-  font-family: "BNPSansCondensed";
-  src: url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.eot");
-  src: url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.eot?#iefix") format("embedded-opentype"), url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.woff") format("woff"), url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.ttf") format("truetype"), url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.svg#BnppSans-r") format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-a {
-  text-decoration: underline;
-  color: #085f40;
-}
-
-a:hover,
-a:focus {
-  color: #085f40;
-}
-
-.tel {
-  display: inline-block;
-  margin-bottom: 0;
-  color: white;
-}
-@media (max-width: 380px) {
-  .tel {
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    line-height: 16px;
-  }
-}
-@media (min-width: 768px) {
-  .tel {
-    padding: 11px 0 0 12px;
-  }
-}
-@media (min-width: 992px) {
-  .tel {
-    padding: 11px 12px;
-  }
-}
-
-.primaryContent {
-  padding-bottom: 0;
-}
-@media (min-width: 768px) {
-  .primaryContent {
-    margin-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media (min-width: 992px) {
-  .primaryContent {
-    margin: 40px 0;
-  }
-}
-
 .container {
   min-width: 300px;
 }
@@ -126,6 +68,40 @@ a:focus {
   .content {
     padding: 40px 30px;
   }
+}
+
+.primaryContent {
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .primaryContent {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .primaryContent {
+    margin: 40px 0;
+  }
+}
+
+@font-face {
+  font-family: "BNPSansCondensed";
+  src: url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.eot");
+  src: url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.eot?#iefix") format("embedded-opentype"), url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.woff") format("woff"), url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.ttf") format("truetype"), url("https://www.hellobank.be/fonts/messagent/bnpp-sans-cond-v2.svg#BnppSans-r") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+a {
+  text-decoration: underline;
+  color: #085f40;
+}
+
+a:hover,
+a:focus {
+  color: #085f40;
 }
 
 blockquote {
@@ -439,6 +415,30 @@ blockquote {
   }
   .topic:after {
     background-size: 293px 136px;
+  }
+}
+
+.tel {
+  display: inline-block;
+  margin-bottom: 0;
+  color: white;
+}
+@media (max-width: 380px) {
+  .tel {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .tel {
+    padding: 11px 0 0 12px;
+  }
+}
+@media (min-width: 992px) {
+  .tel {
+    padding: 11px 12px;
   }
 }
 

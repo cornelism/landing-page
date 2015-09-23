@@ -1,100 +1,22 @@
 @import "variables";
+
 @import "abstraction/breakpoints";
 @import "abstraction/helpers";
+
+@import "layout/container";
+@import "layout/content";
+@import "layout/primaryContent";
+
 @import "theme/fonts";
-
-a {
-	text-decoration: underline;
-	color:$green-link;
-}
-
-a:hover,
-a:focus {
-	color:$green-link;
-}
-
-.tel {
-	display: inline-block;
-	margin-bottom: 0;
-	color: white;
-	
-	@include max-bp(380px) {
-		  display: block;
-		  text-align: center;
-		  font-size: 16px;
-		  line-height: 16px;
-	}
-	
-	@include small {
-		padding:11px 0 0 12px;
-	}
-	
-	@include medium {
-		padding: 11px 12px;
-	}
-}
-
-.primaryContent {
-	padding-bottom: 0;
-	
-	@include small {
-		margin-top:20px;
-		padding-bottom: 20px;
-	}
-	
-	@include medium {
-		margin:40px 0;
-	}
-}
-
-.container {
-	min-width: 300px;
-	@include mobile {
-		padding: 0;
-	}
-	
-	@include small {
-		width: 750px;
-	}
-	
-	@include medium {
-		width: 940px;
-	}
-	// IE Fix Bootstrap
-	.msie & {
-		width: 100%;
-		
-		@include small {
-			width: 750px;
-		}
-		
-		@include medium {
-			width: 940px;
-		}
-	}
-}
-
-.content {
-	background-color:#fafafa;
-	padding:1em;
-	border:1px solid #e5e9ef;
-	font-size: 12px;
-	display: inline-block;
-	@include small {
-		padding:40px 15px;
-		border-top:0;
-	}
-	@include medium {
-		padding:40px 30px;
-	}
-}
-
+@import "theme/links";
 @import "theme/quotes";
+
 @import "components/row";
 @import "components/columns";
 @import "components/visual-header";
 @import "components/button";
 @import "components/topic";
+@import "components/phonenumbers";
 @import "components/usp-list";
 @import "components/cta-lower";
 @import "components/more-info";

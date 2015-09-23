@@ -1,0 +1,26 @@
+.container {
+	min-width: 300px;
+	@include mobile {
+		padding: 0;
+	}
+	
+	@include small {
+		width: 750px;
+	}
+	
+	@include medium {
+		width: 940px;
+	}
+	// IE Fix Bootstrap
+	.msie & {
+		width: 100%;
+		
+		@include small {
+			width: 750px;
+		}
+		
+		@include medium {
+			width: 940px;
+		}
+	}
+}
